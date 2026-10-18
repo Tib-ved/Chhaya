@@ -1,0 +1,73 @@
+[
+ {
+  "date": "2026-10-15",
+  "commit": "01c93f3",
+  "what": "Voice agent: answer to first word, session opened before the resident speaks",
+  "before": "4.3–4.6 s",
+  "after": "0.7–0.9 s"
+ },
+ {
+  "date": "2026-10-15",
+  "commit": "1004482",
+  "what": "Voice agent: session open time, with a shared client and warm-up",
+  "before": "3.5 s",
+  "after": "2.2 s"
+ },
+ {
+  "date": "2026-10-14",
+  "commit": "64d4ab1",
+  "what": "Ask Chhaya: topic check moved to Flash-Lite",
+  "before": "1.3–10 s",
+  "after": "about 0.9 s"
+ },
+ {
+  "date": "2026-10-12",
+  "commit": "86e3e7d",
+  "what": "Case notes: low thinking",
+  "before": "7–10 s",
+  "after": "2–5 s"
+ },
+ {
+  "date": "2026-10-15",
+  "commit": "01c93f3",
+  "what": "Voice instruction rewritten as a conversation instead of a questionnaire (Hindi heat and no-profile instructions, in words)",
+  "before": "3,464 / 3,320 words",
+  "after": "2,231 / 2,036 words (36–39% shorter)"
+ },
+ {
+  "date": "2026-10-17",
+  "commit": "6aaa17e",
+  "what": "Officer's Overview loads faster",
+  "before": "18.8 s",
+  "after": "5–7 s"
+ },
+ {
+  "date": "2026-10-17",
+  "commit": "6aaa17e",
+  "what": "Officer's Overview start-up script size",
+  "before": "650 kB",
+  "after": "331 kB"
+ },
+ {
+  "date": "2026-10-17",
+  "commit": "6aaa17e",
+  "what": "Region data request on Cloud Run",
+  "before": "about 1.0 s",
+  "after": "0.56 s"
+ },
+ {
+  "fill": "emergency_line",
+  "date": "2026-10-17",
+  "commit": null,
+  "what": "Emergency line (call 108) spoken before the call ends",
+  "before": "5 of 9",
+  "after": null
+ },
+ {
+  "date": "2026-10-18",
+  "commit": "09d2b57",
+  "what": "Ask Chhaya: answers name the chart or table they show, alert questions read the alerts list, and an ambiguous test question names its resident",
+  "before": "11 of 15",
+  "after": "15 of 15"
+ }
+]

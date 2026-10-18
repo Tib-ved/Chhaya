@@ -1,0 +1,2217 @@
+{
+  "forecastHours": [
+    {
+      "interval": {
+        "startTime": "2026-10-11T12:30:00Z",
+        "endTime": "2026-10-11T13:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 11,
+        "hours": 18,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/sunny",
+        "description": {
+          "text": "Sunny",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 30
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 31
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 17.3
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 31
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 30
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 21.1
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1013.37
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "NORTHEAST",
+          "degrees": 44
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 10
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 13
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": true,
+      "relativeHumidity": 46,
+      "uvIndex": 0,
+      "thunderstormProbability": 0,
+      "cloudCover": 14
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-11T13:30:00Z",
+        "endTime": "2026-10-11T14:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 11,
+        "hours": 19,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/clear",
+        "description": {
+          "text": "Clear",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 28.5
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 29.6
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 17.8
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 29.6
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 28.5
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 21
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1014.16
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "NORTHEAST",
+          "degrees": 54
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 11
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 16
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": false,
+      "relativeHumidity": 52,
+      "uvIndex": 0,
+      "thunderstormProbability": 0,
+      "cloudCover": 13
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-11T14:30:00Z",
+        "endTime": "2026-10-11T15:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 11,
+        "hours": 20,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/clear",
+        "description": {
+          "text": "Clear",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 27.5
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 28.6
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 18
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 28.6
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 27.5
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 20.8
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1014.83
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "EAST_NORTHEAST",
+          "degrees": 61
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 10
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 18
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": false,
+      "relativeHumidity": 56,
+      "uvIndex": 0,
+      "thunderstormProbability": 0,
+      "cloudCover": 17
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-11T15:30:00Z",
+        "endTime": "2026-10-11T16:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 11,
+        "hours": 21,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/clear",
+        "description": {
+          "text": "Clear",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 26.7
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 27.9
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 18.2
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 27.9
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 26.7
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 20.7
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 15
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0.01
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1015.45
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "NORTHEAST",
+          "degrees": 51
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 13
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 18
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": false,
+      "relativeHumidity": 59,
+      "uvIndex": 0,
+      "thunderstormProbability": 20,
+      "cloudCover": 8
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-11T16:30:00Z",
+        "endTime": "2026-10-11T17:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 11,
+        "hours": 22,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/clear",
+        "description": {
+          "text": "Clear",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 26
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 27.3
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 18.4
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 27.3
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 26
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 20.6
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1015.61
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "EAST_NORTHEAST",
+          "degrees": 65
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 11
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 16
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": false,
+      "relativeHumidity": 62,
+      "uvIndex": 0,
+      "thunderstormProbability": 0,
+      "cloudCover": 10
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-11T17:30:00Z",
+        "endTime": "2026-10-11T18:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 11,
+        "hours": 23,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/clear",
+        "description": {
+          "text": "Clear",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 25.3
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 26.8
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 18.6
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 26.8
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 25.3
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 20.6
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1015.56
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "EAST_NORTHEAST",
+          "degrees": 69
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 11
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 16
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": false,
+      "relativeHumidity": 66,
+      "uvIndex": 0,
+      "thunderstormProbability": 0,
+      "cloudCover": 10
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-11T18:30:00Z",
+        "endTime": "2026-10-11T19:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 12,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/clear",
+        "description": {
+          "text": "Clear",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 24.5
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 26.1
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 18.7
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 26.1
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 24.5
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 20.4
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1015.55
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "EAST",
+          "degrees": 81
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 11
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 18
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": false,
+      "relativeHumidity": 70,
+      "uvIndex": 0,
+      "thunderstormProbability": 0,
+      "cloudCover": 8
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-11T19:30:00Z",
+        "endTime": "2026-10-11T20:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 12,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/clear",
+        "description": {
+          "text": "Clear",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 23.9
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 25.7
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 18.8
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 25.7
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 23.9
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 20.3
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1015.48
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "EAST",
+          "degrees": 90
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 10
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 14
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": false,
+      "relativeHumidity": 73,
+      "uvIndex": 0,
+      "thunderstormProbability": 0,
+      "cloudCover": 1
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-11T20:30:00Z",
+        "endTime": "2026-10-11T21:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 12,
+        "hours": 2,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/clear",
+        "description": {
+          "text": "Clear",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 23.4
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 25.3
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 18.8
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 25.3
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 23.4
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 20.2
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1015.25
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "EAST",
+          "degrees": 99
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 8
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 13
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": false,
+      "relativeHumidity": 75,
+      "uvIndex": 0,
+      "thunderstormProbability": 0,
+      "cloudCover": 0
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-11T21:30:00Z",
+        "endTime": "2026-10-11T22:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 12,
+        "hours": 3,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/clear",
+        "description": {
+          "text": "Clear",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 23.1
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 25.1
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 18.8
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 25.1
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 23.1
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 20
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1015.41
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "EAST",
+          "degrees": 102
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 6
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 10
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": false,
+      "relativeHumidity": 76,
+      "uvIndex": 0,
+      "thunderstormProbability": 0,
+      "cloudCover": 0
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-11T22:30:00Z",
+        "endTime": "2026-10-11T23:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 12,
+        "hours": 4,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/clear",
+        "description": {
+          "text": "Clear",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 22.8
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 24.9
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 18.7
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 24.9
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 22.8
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 19.9
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1015.56
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "EAST",
+          "degrees": 95
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 5
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 8
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": false,
+      "relativeHumidity": 77,
+      "uvIndex": 0,
+      "thunderstormProbability": 0,
+      "cloudCover": 0
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-11T23:30:00Z",
+        "endTime": "2026-10-12T00:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 12,
+        "hours": 5,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/clear",
+        "description": {
+          "text": "Clear",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 22.4
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 24.7
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 18.7
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 24.7
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 22.4
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 19.8
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1015.8
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "EAST",
+          "degrees": 86
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 6
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 6
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": false,
+      "relativeHumidity": 79,
+      "uvIndex": 0,
+      "thunderstormProbability": 0,
+      "cloudCover": 0
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-12T00:30:00Z",
+        "endTime": "2026-10-12T01:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 12,
+        "hours": 6,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/clear",
+        "description": {
+          "text": "Clear",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 22.7
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 24.9
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 18.8
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 24.9
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 22.7
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 20
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1016.71
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "EAST",
+          "degrees": 81
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 5
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 6
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": false,
+      "relativeHumidity": 78,
+      "uvIndex": 0,
+      "thunderstormProbability": 0,
+      "cloudCover": 0
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-12T01:30:00Z",
+        "endTime": "2026-10-12T02:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 12,
+        "hours": 7,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/sunny",
+        "description": {
+          "text": "Sunny",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 23.4
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 25.4
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 19.2
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 25.4
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 23.4
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 20.4
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1017.57
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "EAST_NORTHEAST",
+          "degrees": 77
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 5
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 8
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": true,
+      "relativeHumidity": 77,
+      "uvIndex": 0,
+      "thunderstormProbability": 0,
+      "cloudCover": 0
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-12T02:30:00Z",
+        "endTime": "2026-10-12T03:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 12,
+        "hours": 8,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/sunny",
+        "description": {
+          "text": "Sunny",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 25.1
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 26.8
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 19.5
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 26.8
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 25.1
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 21.1
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1018.11
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "EAST_NORTHEAST",
+          "degrees": 78
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 5
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 10
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": true,
+      "relativeHumidity": 70,
+      "uvIndex": 1,
+      "thunderstormProbability": 0,
+      "cloudCover": 0
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-12T03:30:00Z",
+        "endTime": "2026-10-12T04:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 12,
+        "hours": 9,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/sunny",
+        "description": {
+          "text": "Sunny",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 27.3
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 29
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 19.4
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 29
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 27.3
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 21.7
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1018.45
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "EAST",
+          "degrees": 83
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 5
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 13
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": true,
+      "relativeHumidity": 62,
+      "uvIndex": 2,
+      "thunderstormProbability": 0,
+      "cloudCover": 0
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-12T04:30:00Z",
+        "endTime": "2026-10-12T05:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 12,
+        "hours": 10,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/sunny",
+        "description": {
+          "text": "Sunny",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 29.6
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 31.3
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 19.1
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 31.3
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 29.6
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 22.1
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1018.3
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "NORTH",
+          "degrees": 5
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 5
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 14
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": true,
+      "relativeHumidity": 53,
+      "uvIndex": 4,
+      "thunderstormProbability": 0,
+      "cloudCover": 0
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-12T05:30:00Z",
+        "endTime": "2026-10-12T06:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 12,
+        "hours": 11,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/sunny",
+        "description": {
+          "text": "Sunny",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 31.4
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 33.1
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 18.6
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 33.1
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 31.4
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 22.3
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1017.5
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "NORTH_NORTHWEST",
+          "degrees": 327
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 5
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 14
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": true,
+      "relativeHumidity": 46,
+      "uvIndex": 6,
+      "thunderstormProbability": 0,
+      "cloudCover": 0
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-12T06:30:00Z",
+        "endTime": "2026-10-12T07:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 12,
+        "hours": 12,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/sunny",
+        "description": {
+          "text": "Sunny",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 32.6
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 33.9
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 17.4
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 33.9
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 32.6
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 21.9
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1016.73
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "NORTHWEST",
+          "degrees": 323
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 6
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 16
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": true,
+      "relativeHumidity": 40,
+      "uvIndex": 6,
+      "thunderstormProbability": 0,
+      "cloudCover": 17
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-12T07:30:00Z",
+        "endTime": "2026-10-12T08:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 12,
+        "hours": 13,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/mostly_sunny",
+        "description": {
+          "text": "Mostly sunny",
+          "languageCode": "en"
+        },
+        "type": "MOSTLY_CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 33.3
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 34.4
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 16.9
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 34.4
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 33.3
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 21.8
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1015.86
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "NORTHWEST",
+          "degrees": 326
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 8
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 18
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": true,
+      "relativeHumidity": 37,
+      "uvIndex": 5,
+      "thunderstormProbability": 0,
+      "cloudCover": 22
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-12T08:30:00Z",
+        "endTime": "2026-10-12T09:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 12,
+        "hours": 14,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/mostly_sunny",
+        "description": {
+          "text": "Mostly sunny",
+          "languageCode": "en"
+        },
+        "type": "MOSTLY_CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 33.8
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 34.8
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 16.4
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 34.8
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 33.8
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 21.7
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1015.02
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "NORTH_NORTHWEST",
+          "degrees": 331
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 10
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 19
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": true,
+      "relativeHumidity": 35,
+      "uvIndex": 4,
+      "thunderstormProbability": 0,
+      "cloudCover": 23
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-12T09:30:00Z",
+        "endTime": "2026-10-12T10:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 12,
+        "hours": 15,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/mostly_sunny",
+        "description": {
+          "text": "Mostly sunny",
+          "languageCode": "en"
+        },
+        "type": "MOSTLY_CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 33.9
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 34.7
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 16
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 34.7
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 33.9
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 21.5
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1014.69
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "NORTH_NORTHWEST",
+          "degrees": 334
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 11
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 21
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": true,
+      "relativeHumidity": 34,
+      "uvIndex": 2,
+      "thunderstormProbability": 0,
+      "cloudCover": 24
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-12T10:30:00Z",
+        "endTime": "2026-10-12T11:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 12,
+        "hours": 16,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/sunny",
+        "description": {
+          "text": "Sunny",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 33.5
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 34.2
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 15.9
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 34.2
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 33.5
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 21.4
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1014.59
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "NORTH_NORTHWEST",
+          "degrees": 339
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 11
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 21
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": true,
+      "relativeHumidity": 34,
+      "uvIndex": 1,
+      "thunderstormProbability": 0,
+      "cloudCover": 12
+    },
+    {
+      "interval": {
+        "startTime": "2026-10-12T11:30:00Z",
+        "endTime": "2026-10-12T12:30:00Z"
+      },
+      "displayDateTime": {
+        "year": 2026,
+        "month": 10,
+        "day": 12,
+        "hours": 17,
+        "minutes": 0,
+        "seconds": 0,
+        "nanos": 0,
+        "utcOffset": "19800s"
+      },
+      "weatherCondition": {
+        "iconBaseUri": "https://maps.gstatic.com/weather/v1/sunny",
+        "description": {
+          "text": "Sunny",
+          "languageCode": "en"
+        },
+        "type": "CLEAR"
+      },
+      "temperature": {
+        "unit": "CELSIUS",
+        "degrees": 32.6
+      },
+      "feelsLikeTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 33.3
+      },
+      "dewPoint": {
+        "unit": "CELSIUS",
+        "degrees": 16.1
+      },
+      "heatIndex": {
+        "unit": "CELSIUS",
+        "degrees": 33.3
+      },
+      "windChill": {
+        "unit": "CELSIUS",
+        "degrees": 32.6
+      },
+      "wetBulbTemperature": {
+        "unit": "CELSIUS",
+        "degrees": 21.2
+      },
+      "precipitation": {
+        "probability": {
+          "type": "RAIN",
+          "percent": 0
+        },
+        "snowQpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        },
+        "qpf": {
+          "unit": "MILLIMETERS",
+          "quantity": 0
+        }
+      },
+      "airPressure": {
+        "meanSeaLevelMillibars": 1014.02
+      },
+      "wind": {
+        "direction": {
+          "cardinal": "NORTH_NORTHWEST",
+          "degrees": 345
+        },
+        "speed": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 11
+        },
+        "gust": {
+          "unit": "KILOMETERS_PER_HOUR",
+          "value": 19
+        }
+      },
+      "visibility": {
+        "unit": "KILOMETERS",
+        "distance": 16
+      },
+      "iceThickness": {
+        "unit": "MILLIMETERS",
+        "thickness": 0
+      },
+      "isDaytime": true,
+      "relativeHumidity": 37,
+      "uvIndex": 0,
+      "thunderstormProbability": 0,
+      "cloudCover": 8
+    }
+  ],
+  "timeZone": {
+    "id": "Asia/Calcutta",
+    "version": ""
+  },
+  "nextPageToken": ""
+}

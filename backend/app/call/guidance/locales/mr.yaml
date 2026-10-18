@@ -1,0 +1,7 @@
+language: Marathi
+speak: Speak simple everyday Marathi.
+greeting_example: ""
+emergency_line: ""
+phrasing: {}
+connectors: "बरं, अच्छा, हो का"
+# A Marathi speaker on the team should fill greeting_example and emergency_line.

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Chhaya sign-in</title>
+<style>
+  body { font: 16px system-ui, sans-serif; max-width: 24rem; margin: 4rem auto; padding: 0 1rem; }
+  #button { margin-top: 1.5rem; min-height: 44px; }
+  #message { margin-top: 1rem; color: #a40000; }
+</style>
+<h1>Chhaya</h1>
+<p>Sign in with a Google account that has been given access.</p>
+<div id="button"></div>
+<p id="message" role="alert"></p>
+<!-- Loaded first and not deferred: by the time the script below runs it has loaded or failed. -->
+<script src="https://accounts.google.com/gsi/client"></script>
+<script>
+// safe-next:start
+function safeNext(value) {
+  // The same rule as safe_next_path on the server: a plain path on this site, or nothing.
+  if (typeof value !== "string" || value.length === 0 || value.length > 200) return null;
+  if (value[0] !== "/" || value[1] === "/") return null;
+  if (value.includes("\\") || value.includes("://")) return null;
+  for (let i = 0; i < value.length; i++) {
+    const code = value.charCodeAt(i);
+    if (code <= 0x20 || code === 0x7f) return null;
+  }
+  return value;
+}
+// safe-next:end
+
+const message = text => { document.getElementById("message").textContent = text; };
+
+function destination() {
+  const wanted = safeNext(new URLSearchParams(location.search).get("next"));
+  if (wanted === null) return "/dev/call";
+  try {
+    // Second check: the browser itself must resolve it to this site.
+    if (new URL(wanted, location.origin).origin !== location.origin) return "/dev/call";
+  } catch (error) {
+    return "/dev/call";
+  }
+  return wanted;
+}
+
+async function onCredential(answer) {
+  message("");
+  try {
+    const response = await fetch("/auth/google", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({credential: answer.credential}),
+      credentials: "same-origin",
+    });
+    if (response.ok) { location.assign(destination()); return; }
+    message(response.status === 403
+      ? "This Google account is not allowed to use this app."
+      : "Sign-in failed. Please try again.");
+  } catch (error) {
+    message("Sign-in failed. Please try again.");
+  }
+}
+
+async function start() {
+  try {
+    const config = await (await fetch("/auth/config", {credentials: "same-origin"})).json();
+    if (!config.client_id) { message("Sign-in is not set up on this server."); return; }
+    if (!window.google || !google.accounts || !google.accounts.id) {
+      message("Could not load Google sign-in. Check your connection and reload.");
+      return;
+    }
+    google.accounts.id.initialize({client_id: config.client_id, callback: onCredential, auto_select: false});
+    google.accounts.id.renderButton(document.getElementById("button"), {theme: "outline", size: "large"});
+  } catch (error) {
+    message("Sign-in failed. Please try again.");
+  }
+}
+
+start();
+</script>
+</html>

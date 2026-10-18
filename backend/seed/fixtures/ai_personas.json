@@ -1,0 +1,407 @@
+{
+ "about": "The residents an AI plays in the recorded conversations with Chhaya's agent (scripts/record_ai_calls.py). Facts are told only when asked. expected_tier is what the triage rules give when the agent records the facts as the guidance describes them.",
+ "personas": [
+  {
+   "id": "healthy_with_family",
+   "situation": "An older woman at home with her son's family on a hot day, feeling well.",
+   "language": ["hi", "mwr", "en"],
+   "gender": "f",
+   "profile": {"lives_alone": false, "outdoor_worker": false, "conditions": false, "age_band": "70_79"},
+   "respondent": "self",
+   "facts": {
+    "feeling": "You feel fine. No dizziness, no headache, no vomiting, no cramps, no weakness.",
+    "water_and_food": "You are drinking plenty of water and eating normally; the matka at home is full.",
+    "company": "Your son and daughter-in-law are at home with you all day.",
+    "home": "The ceiling fan works and the inner room stays cool.",
+    "going_out": "You will stay inside until evening.",
+    "help": "You need nothing."
+   },
+   "expected_tier": "green"
+  },
+  {
+   "id": "healthy_alone_younger",
+   "situation": "A man in his sixties who lives alone, well and managing on a hot day.",
+   "language": ["hi", "mwr"],
+   "gender": "m",
+   "profile": {"lives_alone": true, "outdoor_worker": false, "conditions": false, "age_band": "60_69"},
+   "respondent": "self",
+   "facts": {
+    "feeling": "You feel fine. No dizziness, no headache, no vomiting, no weakness.",
+    "water_and_food": "You drink water all day and have enough at home; you ate rotis in the morning.",
+    "company": "You live alone and are alone today.",
+    "home": "You have a cooler that works.",
+    "going_out": "You will stay indoors in the afternoon.",
+    "help": "You need nothing."
+   },
+   "expected_tier": "green"
+  },
+  {
+   "id": "healthy_with_medicine",
+   "situation": "An older woman with diabetes who is well, takes her tablets and has family at home.",
+   "language": ["hi", "en"],
+   "gender": "f",
+   "condition": "diabetes",
+   "profile": {"lives_alone": false, "outdoor_worker": false, "conditions": true, "age_band": "70_79"},
+   "respondent": "self",
+   "facts": {
+    "feeling": "You feel well. No dizziness, no headache, no vomiting, no weakness.",
+    "water_and_food": "You drink water regularly and have enough at home.",
+    "company": "Your husband and grandson are at home.",
+    "home": "The fan works and you sit in the shaded room.",
+    "going_out": "You will not go out today.",
+    "medicine": "You take sugar tablets every day and have enough for a month.",
+    "help": "You need nothing."
+   },
+   "expected_tier": "green"
+  },
+  {
+   "id": "mild_headache",
+   "situation": "An older woman at home with family who has had a headache since noon from the heat.",
+   "language": ["hi", "mwr", "en"],
+   "gender": "f",
+   "profile": {"lives_alone": false, "outdoor_worker": false, "conditions": false, "age_band": "70_79"},
+   "respondent": "self",
+   "facts": {
+    "feeling": "You have a headache since noon and feel a bit tired. No vomiting, no fainting, no confusion, no chest pain, breathing is fine.",
+    "water_and_food": "You are drinking water and there is enough at home.",
+    "company": "Your daughter-in-law is at home.",
+    "home": "The fan works.",
+    "going_out": "You will stay inside.",
+    "help": "You need nothing, you will rest."
+   },
+   "expected_tier": "amber"
+  },
+  {
+   "id": "mild_cramps_heart",
+   "situation": "An older man with a heart condition who has leg cramps and heavy sweating today.",
+   "language": ["hi", "mwr"],
+   "gender": "m",
+   "condition": "heart",
+   "profile": {"lives_alone": false, "outdoor_worker": false, "conditions": true, "age_band": "70_79"},
+   "respondent": "self",
+   "facts": {
+    "feeling": "You have cramps in your legs and you are sweating a lot. No chest pain, no trouble breathing, no fainting, no confusion, no vomiting.",
+    "water_and_food": "You are drinking water and have enough at home.",
+    "company": "Your wife is at home with you.",
+    "home": "The cooler works.",
+    "going_out": "You will stay inside.",
+    "medicine": "You take heart tablets daily and have enough for two weeks.",
+    "help": "You need nothing."
+   },
+   "expected_tier": "amber"
+  },
+  {
+   "id": "low_fluids_no_appetite",
+   "situation": "A very old man who has hardly drunk anything since morning and does not feel like eating.",
+   "language": ["hi", "mwr"],
+   "gender": "m",
+   "profile": {"lives_alone": false, "outdoor_worker": false, "conditions": false, "age_band": "80_plus"},
+   "respondent": "self",
+   "facts": {
+    "feeling": "You feel fine, just no appetite. No dizziness, no headache, no vomiting.",
+    "water_and_food": "You have drunk only one glass of water since morning and skipped lunch. There is water at home.",
+    "company": "Your son's family is at home.",
+    "home": "The fan works.",
+    "going_out": "You will stay inside.",
+    "help": "You need nothing."
+   },
+   "expected_tier": "amber"
+  },
+  {
+   "id": "low_fluids_alone",
+   "situation": "A woman in her sixties living alone whose water at home is running short.",
+   "language": ["hi", "en"],
+   "gender": "f",
+   "profile": {"lives_alone": true, "outdoor_worker": false, "conditions": false, "age_band": "60_69"},
+   "respondent": "self",
+   "facts": {
+    "feeling": "You feel fine. No dizziness, no headache, no vomiting.",
+    "water_and_food": "Only half a bucket of water is left; the tap water did not come today, so you are drinking less to save it.",
+    "company": "You live alone and are alone today.",
+    "home": "The fan works.",
+    "going_out": "You will stay inside.",
+    "help": "You need nothing for now, the neighbour may bring water in the evening."
+   },
+   "expected_tier": "amber"
+  },
+  {
+   "id": "no_water_alone",
+   "situation": "An older woman alone at home with no water since morning because the tanker did not come.",
+   "language": ["hi", "mwr"],
+   "gender": "f",
+   "profile": {"lives_alone": true, "outdoor_worker": false, "conditions": false, "age_band": "70_79"},
+   "respondent": "self",
+   "facts": {
+    "feeling": "You feel thirsty and your mouth is dry, otherwise no dizziness, no vomiting, no fainting, no chest pain.",
+    "water_and_food": "There is no water at all at home; the tanker did not come and you have not had water since morning.",
+    "company": "You live alone and nobody is with you today.",
+    "home": "The fan works.",
+    "going_out": "You cannot walk to the hand pump, it is too far.",
+    "help": "You would like someone to bring water."
+   },
+   "expected_tier": "red"
+  },
+  {
+   "id": "no_water_supply_family",
+   "situation": "An older man with family at home whose village water supply was cut; a little stored water is left.",
+   "language": ["hi"],
+   "gender": "m",
+   "profile": {"lives_alone": false, "outdoor_worker": false, "conditions": false, "age_band": "60_69"},
+   "respondent": "self",
+   "facts": {
+    "feeling": "You feel fine. No dizziness, no headache, no vomiting.",
+    "water_and_food": "The supply has been off for two days; there is only one matka of water left for the whole family, so everyone is drinking less.",
+    "company": "Your wife and sons are at home.",
+    "home": "The fan works.",
+    "going_out": "You will stay inside.",
+    "help": "You need nothing; your son has gone to arrange a tanker."
+   },
+   "expected_tier": "amber"
+  },
+  {
+   "id": "alone_dizzy",
+   "situation": "A very old woman alone at home who feels dizzy when she stands up.",
+   "language": ["hi", "mwr", "en"],
+   "gender": "f",
+   "profile": {"lives_alone": true, "outdoor_worker": false, "conditions": false, "age_band": "80_plus"},
+   "respondent": "self",
+   "facts": {
+    "feeling": "You feel dizzy when you stand up and a little weak. You have not fainted, you are not confused, no chest pain, breathing is fine, no vomiting.",
+    "water_and_food": "You are drinking water and there is enough at home.",
+    "company": "You are alone; your son works in Jaipur.",
+    "home": "The fan works.",
+    "going_out": "You will stay inside.",
+    "help": "You need nothing, you will lie down."
+   },
+   "expected_tier": "amber"
+  },
+  {
+   "id": "emergency_chest_pain",
+   "situation": "An older man with a heart condition who has chest pain and is short of breath right now.",
+   "language": ["hi", "mwr", "en"],
+   "gender": "m",
+   "condition": "heart",
+   "profile": {"lives_alone": false, "outdoor_worker": false, "conditions": true, "age_band": "70_79"},
+   "respondent": "self",
+   "facts": {
+    "feeling": "Your chest has been hurting for half an hour and you cannot breathe properly. You are sweating a lot.",
+    "company": "Your wife is in the next room.",
+    "medicine": "You have your heart tablets."
+   },
+   "expected_tier": "red"
+  },
+  {
+   "id": "emergency_fainted",
+   "situation": "A son answers his mother's phone; she fainted in the courtyard a few minutes ago and is very drowsy.",
+   "language": ["hi", "mwr"],
+   "gender": "f",
+   "profile": {"lives_alone": false, "outdoor_worker": false, "conditions": false, "age_band": "80_plus"},
+   "respondent": "family",
+   "facts": {
+    "who_you_are": "You are her son. She cannot come to the phone.",
+    "feeling": "She fainted in the courtyard a few minutes ago; she opened her eyes but is very drowsy and her skin is very hot.",
+    "company": "You and your wife are with her."
+   },
+   "expected_tier": "red"
+  },
+  {
+   "id": "emergency_confusion",
+   "situation": "A granddaughter answers; her grandfather is confused, talking strangely and has very hot dry skin.",
+   "language": ["hi", "en"],
+   "gender": "m",
+   "profile": {"lives_alone": false, "outdoor_worker": false, "conditions": false, "age_band": "80_plus"},
+   "respondent": "family",
+   "facts": {
+    "who_you_are": "You are his granddaughter. He cannot talk on the phone properly.",
+    "feeling": "Since noon he is confused, does not recognise you, talks strangely, and his skin is very hot and dry. He has stopped sweating.",
+    "company": "You are with him."
+   },
+   "expected_tier": "red"
+  },
+  {
+   "id": "family_cannot_say",
+   "situation": "A daughter-in-law answers; her mother-in-law has gone to the temple and she does not know how she is feeling today.",
+   "language": ["hi", "mwr"],
+   "gender": "f",
+   "profile": {"lives_alone": false, "outdoor_worker": false, "conditions": false, "age_band": "70_79"},
+   "respondent": "family",
+   "facts": {
+    "who_you_are": "You are her daughter-in-law. She is not at home.",
+    "feeling": "You do not know how she is feeling; you were working in the fields since morning and have not seen her.",
+    "water_and_food": "There is water at home.",
+    "company": "The family lives with her.",
+    "home": "The fan works.",
+    "help": "Call again in the evening."
+   },
+   "expected_tier": "amber"
+  },
+  {
+   "id": "cuts_off_early",
+   "situation": "An older woman who is busy cooking and puts the phone down after a couple of replies.",
+   "language": ["hi", "mwr"],
+   "gender": "f",
+   "profile": {"lives_alone": false, "outdoor_worker": false, "conditions": false, "age_band": "70_79"},
+   "respondent": "self",
+   "hangs_up_after": 2,
+   "facts": {
+    "feeling": "You are fine.",
+    "water_and_food": "You have water.",
+    "busy": "The milk is boiling on the stove and you have no time to talk."
+   },
+   "expected_tier": "amber"
+  },
+  {
+   "id": "cuts_off_later",
+   "situation": "An older man who answers a few questions and then has to go because a visitor arrived.",
+   "language": ["en"],
+   "gender": "m",
+   "profile": {"lives_alone": false, "outdoor_worker": false, "conditions": false, "age_band": "70_79"},
+   "respondent": "self",
+   "hangs_up_after": 4,
+   "facts": {
+    "feeling": "You feel fine. No dizziness, no headache, no vomiting.",
+    "water_and_food": "You are drinking water and there is enough.",
+    "company": "Your wife is at home.",
+    "busy": "Guests have arrived at the door and you must go."
+   },
+   "expected_tier": "amber"
+  },
+  {
+   "id": "outdoor_worker_fine",
+   "situation": "A middle-aged construction worker who works in the sun and is managing well.",
+   "language": ["hi", "mwr"],
+   "gender": "m",
+   "profile": {"lives_alone": false, "outdoor_worker": true, "conditions": false, "age_band": "under_60"},
+   "respondent": "self",
+   "facts": {
+    "feeling": "You feel fine. No dizziness, no headache, no cramps.",
+    "water_and_food": "You carry two bottles of water to the site and refill them; you ate lunch.",
+    "company": "You work with other labourers and go home to your family.",
+    "home": "There is a fan at home.",
+    "going_out": "You have to work at the building site today, but you rest in the shade from one to four.",
+    "help": "You need nothing."
+   },
+   "expected_tier": "green"
+  },
+  {
+   "id": "outdoor_worker_headache",
+   "situation": "A farm labourer working in the sun who has a headache and is running out of water at the field.",
+   "language": ["hi", "mwr", "en"],
+   "gender": "m",
+   "profile": {"lives_alone": false, "outdoor_worker": true, "conditions": false, "age_band": "under_60"},
+   "respondent": "self",
+   "facts": {
+    "feeling": "You have a headache and feel very tired from the sun. No vomiting, no fainting, no confusion, no chest pain.",
+    "water_and_food": "Your water bottle is nearly empty and the field is far from the village.",
+    "company": "Other labourers are with you in the field.",
+    "home": "There is a fan at home.",
+    "going_out": "You must keep working in the field until evening.",
+    "help": "You need nothing."
+   },
+   "expected_tier": "amber"
+  },
+  {
+   "id": "must_go_out_older",
+   "situation": "A woman in her late sixties who has to take the goats out and fetch water in the afternoon.",
+   "language": ["hi", "mwr"],
+   "gender": "f",
+   "profile": {"lives_alone": false, "outdoor_worker": false, "conditions": false, "age_band": "60_69"},
+   "respondent": "self",
+   "facts": {
+    "feeling": "You feel fine. No dizziness, no headache, no vomiting.",
+    "water_and_food": "You are drinking water and there is enough at home.",
+    "company": "Your husband is at home.",
+    "home": "The fan works.",
+    "going_out": "You have to take the goats out and fetch water from the hand pump in the afternoon.",
+    "help": "You need nothing."
+   },
+   "expected_tier": "amber"
+  },
+  {
+   "id": "no_medicine_left",
+   "situation": "An older woman with high blood pressure whose tablets finished two days ago.",
+   "language": ["hi", "mwr", "en"],
+   "gender": "f",
+   "condition": "heart",
+   "profile": {"lives_alone": false, "outdoor_worker": false, "conditions": true, "age_band": "70_79"},
+   "respondent": "self",
+   "facts": {
+    "feeling": "You feel fine. No dizziness, no headache, no vomiting.",
+    "water_and_food": "You are drinking water and there is enough at home.",
+    "company": "Your son lives with you.",
+    "home": "The fan works.",
+    "going_out": "You will stay inside.",
+    "medicine": "Your BP tablets finished two days ago and nobody has gone to the health centre for more.",
+    "help": "You would like someone to bring your tablets."
+   },
+   "expected_tier": "amber"
+  },
+  {
+   "id": "medicine_running_low",
+   "situation": "An older man with diabetes who has only two days of tablets left.",
+   "language": ["hi"],
+   "gender": "m",
+   "condition": "diabetes",
+   "profile": {"lives_alone": false, "outdoor_worker": false, "conditions": true, "age_band": "70_79"},
+   "respondent": "self",
+   "facts": {
+    "feeling": "You feel fine. No dizziness, no headache, no vomiting.",
+    "water_and_food": "You are drinking water and there is enough at home.",
+    "company": "Your wife is at home.",
+    "home": "The cooler works.",
+    "going_out": "You will stay inside.",
+    "medicine": "Only two days of sugar tablets are left.",
+    "help": "You need nothing, your son will buy them on Sunday."
+   },
+   "expected_tier": "amber"
+  },
+  {
+   "id": "no_power_hot_room",
+   "situation": "An older woman with family whose electricity has been off since morning; the room is very hot.",
+   "language": ["hi", "mwr"],
+   "gender": "f",
+   "profile": {"lives_alone": false, "outdoor_worker": false, "conditions": false, "age_band": "70_79"},
+   "respondent": "self",
+   "facts": {
+    "feeling": "You feel fine apart from the heat. No dizziness, no headache, no vomiting.",
+    "water_and_food": "You are drinking water and there is enough at home.",
+    "company": "Your grandchildren are at home.",
+    "home": "There has been no electricity since morning, the fan is off and there is no shaded room.",
+    "going_out": "You will stay inside.",
+    "help": "You need nothing."
+   },
+   "expected_tier": "amber"
+  },
+  {
+   "id": "wants_visit",
+   "situation": "A very old man with his wife at home who would like the health worker to come and check his blood pressure.",
+   "language": ["hi"],
+   "gender": "m",
+   "profile": {"lives_alone": false, "outdoor_worker": false, "conditions": false, "age_band": "80_plus"},
+   "respondent": "self",
+   "facts": {
+    "feeling": "You feel fine. No dizziness, no headache, no vomiting.",
+    "water_and_food": "You are drinking water and there is enough at home.",
+    "company": "Your wife is with you.",
+    "home": "The fan works.",
+    "going_out": "You will stay inside.",
+    "help": "You would like the health worker to come today and check your blood pressure."
+   },
+   "expected_tier": "amber"
+  },
+  {
+   "id": "vomiting_cannot_stand",
+   "situation": "An older woman alone at home who has been vomiting again and again and cannot stand up.",
+   "language": ["hi", "mwr"],
+   "gender": "f",
+   "profile": {"lives_alone": true, "outdoor_worker": false, "conditions": false, "age_band": "70_79"},
+   "respondent": "self",
+   "facts": {
+    "feeling": "You have been vomiting again and again since morning and you cannot stand up; you feel very weak.",
+    "water_and_food": "You cannot keep water down.",
+    "company": "You are alone at home."
+   },
+   "expected_tier": "red"
+  }
+ ]
+}

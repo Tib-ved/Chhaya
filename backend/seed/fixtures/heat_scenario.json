@@ -1,0 +1,262 @@
+{
+ "churu": {
+  "name": "Hot day, western Rajasthan",
+  "hours": [
+   {
+    "hour": 6,
+    "temp_c": 31.0
+   },
+   {
+    "hour": 7,
+    "temp_c": 32.4
+   },
+   {
+    "hour": 8,
+    "temp_c": 34.7
+   },
+   {
+    "hour": 9,
+    "temp_c": 37.3
+   },
+   {
+    "hour": 10,
+    "temp_c": 39.9
+   },
+   {
+    "hour": 11,
+    "temp_c": 42.4
+   },
+   {
+    "hour": 12,
+    "temp_c": 44.5
+   },
+   {
+    "hour": 13,
+    "temp_c": 46.1
+   },
+   {
+    "hour": 14,
+    "temp_c": 47.2
+   },
+   {
+    "hour": 15,
+    "temp_c": 47.5
+   },
+   {
+    "hour": 16,
+    "temp_c": 43.3
+   },
+   {
+    "hour": 17,
+    "temp_c": 39.6
+   },
+   {
+    "hour": 18,
+    "temp_c": 36.6
+   },
+   {
+    "hour": 19,
+    "temp_c": 34.7
+   },
+   {
+    "hour": 20,
+    "temp_c": 34.0
+   }
+  ]
+ },
+ "bikaner": {
+  "name": "Hot day, western Rajasthan",
+  "hours": [
+   {
+    "hour": 6,
+    "temp_c": 32.0
+   },
+   {
+    "hour": 7,
+    "temp_c": 33.5
+   },
+   {
+    "hour": 8,
+    "temp_c": 35.9
+   },
+   {
+    "hour": 9,
+    "temp_c": 38.6
+   },
+   {
+    "hour": 10,
+    "temp_c": 41.2
+   },
+   {
+    "hour": 11,
+    "temp_c": 43.6
+   },
+   {
+    "hour": 12,
+    "temp_c": 45.4
+   },
+   {
+    "hour": 13,
+    "temp_c": 46.6
+   },
+   {
+    "hour": 14,
+    "temp_c": 47.0
+   },
+   {
+    "hour": 15,
+    "temp_c": 43.9
+   },
+   {
+    "hour": 16,
+    "temp_c": 41.0
+   },
+   {
+    "hour": 17,
+    "temp_c": 38.5
+   },
+   {
+    "hour": 18,
+    "temp_c": 36.6
+   },
+   {
+    "hour": 19,
+    "temp_c": 35.4
+   },
+   {
+    "hour": 20,
+    "temp_c": 35.0
+   }
+  ]
+ },
+ "jhunjhunu": {
+  "name": "Hot day, Shekhawati",
+  "hours": [
+   {
+    "hour": 6,
+    "temp_c": 30.0
+   },
+   {
+    "hour": 7,
+    "temp_c": 31.4
+   },
+   {
+    "hour": 8,
+    "temp_c": 33.6
+   },
+   {
+    "hour": 9,
+    "temp_c": 36.1
+   },
+   {
+    "hour": 10,
+    "temp_c": 38.6
+   },
+   {
+    "hour": 11,
+    "temp_c": 41.0
+   },
+   {
+    "hour": 12,
+    "temp_c": 43.1
+   },
+   {
+    "hour": 13,
+    "temp_c": 44.7
+   },
+   {
+    "hour": 14,
+    "temp_c": 45.7
+   },
+   {
+    "hour": 15,
+    "temp_c": 46.0
+   },
+   {
+    "hour": 16,
+    "temp_c": 42.0
+   },
+   {
+    "hour": 17,
+    "temp_c": 38.4
+   },
+   {
+    "hour": 18,
+    "temp_c": 35.5
+   },
+   {
+    "hour": 19,
+    "temp_c": 33.6
+   },
+   {
+    "hour": 20,
+    "temp_c": 33.0
+   }
+  ]
+ },
+ "sikar": {
+  "name": "Hot day, Shekhawati",
+  "hours": [
+   {
+    "hour": 6,
+    "temp_c": 31.0
+   },
+   {
+    "hour": 7,
+    "temp_c": 32.5
+   },
+   {
+    "hour": 8,
+    "temp_c": 34.8
+   },
+   {
+    "hour": 9,
+    "temp_c": 37.4
+   },
+   {
+    "hour": 10,
+    "temp_c": 39.9
+   },
+   {
+    "hour": 11,
+    "temp_c": 42.2
+   },
+   {
+    "hour": 12,
+    "temp_c": 44.0
+   },
+   {
+    "hour": 13,
+    "temp_c": 45.1
+   },
+   {
+    "hour": 14,
+    "temp_c": 45.5
+   },
+   {
+    "hour": 15,
+    "temp_c": 42.5
+   },
+   {
+    "hour": 16,
+    "temp_c": 39.8
+   },
+   {
+    "hour": 17,
+    "temp_c": 37.4
+   },
+   {
+    "hour": 18,
+    "temp_c": 35.5
+   },
+   {
+    "hour": 19,
+    "temp_c": 34.4
+   },
+   {
+    "hour": 20,
+    "temp_c": 34.0
+   }
+  ]
+ }
+}

@@ -1,0 +1,117 @@
+hazard: cold
+context: There is a cold-wave warning for the district today.
+# What to cover next, once the person has said how they feel.
+after_feeling: >
+  If they feel cold, stiff, tired or unwell, go to a hot meal and keeping warm next.
+# How a resident whose records say they work outdoors is asked about going out.
+outdoor_worker: "Their records say they work outdoors: ask whether they will be out early, late or overnight today."
+# `ask` is the meaning of each question, in English. `hi` is how it is said in Hindi: what the
+# agent is given to say on every call that is not in English.
+questions:
+  - id: feeling
+    scenarios:
+      - >-
+        If they say they feel cold or are shivering a little and nothing more, record "mild_symptoms".
+    ask: How are you feeling right now?
+    hi: "अभी आपकी तबीयत कैसी है?"
+    then:
+      - when: always
+        ask: Any shivering that will not stop, or numbness?
+        hi: "क्या कँपकँपी रुक नहीं रही, या शरीर सुन्न हो रहा है?"
+      - when: always
+        ask: Any chest pain or trouble breathing?
+        hi: "क्या सीने में दर्द है या साँस लेने में तकलीफ़ है?"
+      - when: they mention any symptom
+        ask: Have you felt very drowsy or confused?
+        hi: "क्या आपको बहुत नींद आ रही है या कुछ समझ नहीं आ रहा?"
+      - when: they mention any symptom
+        ask: Are your fingers or toes numb or changing colour?
+        hi: "क्या हाथ-पैर की उँगलियाँ सुन्न हैं या उनका रंग बदल रहा है?"
+    values:
+      ok: No symptoms.
+      mild_symptoms: Shivering, cold hands and feet, stiffness, a cough or unusual tiredness.
+      severe_symptoms: Any emergency sign, said at any point.
+      unclear: You cannot tell, or the speaker does not know.
+  - id: fluids_food
+    scenarios:
+      - >-
+        If they ask for food, ration or fuel, record "low" or "none" by what they have at home now.
+      - >-
+        If they have had only tea or cold leftovers, record "low". If they are fasting, record it as it is and do not tell them to break the fast.
+    ask: Have you eaten a hot meal today?
+    hi: "क्या आज आपने गरम खाना खाया है?"
+    then:
+      - when: they have not said whether there is food at home
+        ask: Is there enough food at home?
+        hi: "क्या घर में खाने का सामान काफ़ी है?"
+    values:
+      enough: Has eaten a hot meal and has food at home.
+      low: Has eaten little, or food at home is running short.
+      none: Has not eaten today, or has no food at home.
+  - id: company
+    ask: Is anyone with you at home today?
+    hi: "क्या आज घर पर आपके साथ कोई है?"
+    values:
+      with_someone: Someone is with them or will be during the day and night.
+      alone: They are alone today.
+  - id: shelter
+    scenarios:
+      - >-
+        If they sleep on the floor, in a verandah or in a room open to the wind, record "partial"; if they sleep in the open, record "none".
+      - >-
+        If they keep warm with a fire or a stove indoors, give the safety warning about it at once, then record what they have.
+    ask: Do you have blankets and warm clothes?
+    hi: "क्या आपके पास कंबल और गरम कपड़े हैं?"
+    then:
+      - when: always
+        ask: How are you keeping the room warm?
+        hi: "आपका कमरा गरम कैसे रहता है?"
+    values:
+      adequate: Has enough blankets and warm clothes and sleeps indoors.
+      partial: Has some but not enough, or the room is draughty.
+      none: No blankets or warm clothes, or sleeping outdoors.
+  - id: exposure
+    scenarios:
+      - >-
+        If their work keeps them out before sunrise or at night (a watchman, milk rounds, fields, cattle), record "must_go_out". Do not tell them to stay away from work.
+      - >-
+        If they sleep outdoors, record "must_go_out".
+    ask: Do you need to go out at night or early morning today?
+    hi: "क्या आज आपको रात में या सुबह जल्दी बाहर जाना है?"
+    then:
+      - when: they have not said where they sleep
+        ask: Are you sleeping indoors?
+        hi: "क्या आपके सोने की जगह घर के अंदर है?"
+    values:
+      staying_in: Will stay indoors during the cold hours.
+      must_go_out: Has to be outside early, late, or overnight.
+  - id: medicine
+    only_if: has_conditions
+    ask: Do you have your regular medicines with you?
+    hi: "क्या आपकी रोज़ की दवाइयाँ आपके पास हैं?"
+    values:
+      has: Has enough.
+      running_low: Only a day or two left.
+      out: Has none left.
+  - id: help
+    ask: Is there anything you need help with today?
+    hi: "क्या आज आपको किसी मदद की ज़रूरत है?"
+    values:
+      none: Needs nothing.
+      wants_visit: Wants someone to come, or something brought.
+      urgent: Needs someone right now, or an ambulance or a doctor; follow the emergency rule.
+emergency_signs:
+  - Slurred speech or confusion
+  - Extreme drowsiness, or cannot be woken
+  - Numb, white or blue fingers, toes, nose or ears
+  - Chest pain
+  - Struggling to breathe
+  - Fainting or collapse
+advice:
+  - Wear several layers of warm clothes and cover your head, hands and feet.
+  - Eat hot food and drink warm fluids.
+  - If you burn coal or wood for warmth, keep a window or door partly open. Never burn it in a closed room.
+  - Stay indoors during the early morning and at night.
+  - Keep elderly people and small children in the warmest room.
+special:
+  - If the answer about keeping warm mentions burning coal, wood or an angithi indoors, give the open-window advice straight away.

@@ -1,0 +1,130 @@
+/* Chhaya design tokens. DESIGN.md at the repo root is the source of truth; keep the two in step. */
+:root {
+  /* Surfaces: cream ground from the logo, white working surfaces, one sunken step */
+  --color-ground: #FAF8F1;
+  --color-surface: #FFFFFF;
+  --color-surface-sunken: #F3F0E6;
+  --color-surface-soft: #F7F5EE;
+  --color-surface-warm: #FFFCF6;
+  --color-line: #E4E0D3;
+  --color-line-subtle: #EEEBE1;
+  --color-line-strong: #CFCABB;
+  --color-line-control: #77887C;
+
+  /* Ink */
+  --color-text-main: #0C333B;
+  --color-text-secondary: #39564A;
+  --color-text-muted: #53645B;
+
+  /* Brand: shade green and the one sun accent */
+  --color-brand: #146536;
+  --color-brand-hover: #0D4C28;
+  --color-brand-tint: #EDF5E8;
+  --color-brand-subtle: #91B987;
+  --color-brand-light: #D6EBCD;
+  --color-shade: #FFF4DF;
+  --color-sun: #F68B1F;
+  --color-sun-ink: #4B2A10;
+  --color-sun-tint: #FFF0D8;
+  --color-moss: #CAE5BE;
+  --color-ink: #0C333B;
+  --color-on-brand: #FFFFFF;
+  --color-focus: #146536;
+
+  /* Tiers and warning levels: these mean Red / Amber / Green and nothing else */
+  --color-red: #B3261E;
+  --color-red-tint: #FBE9E7;
+  --color-red-text: #8C1D17;
+  --color-red-border: #EDC4C0;
+  --color-amber: #99600A;
+  --color-amber-tint: #FFF0D8;
+  --color-amber-border: #DFC28D;
+  --color-amber-text: #6F4200;
+  --color-amber-dark: #4E2F00;
+  --color-green: #237443;
+  --color-green-tint: #EAF5E6;
+  --color-green-border: #A9CBA0;
+  --color-green-text: #17553A;
+
+  /* Data: every chart series that is not a tier */
+  --color-data-reached: #1D4E89;
+  --color-data-unreached: #8B5A2B;
+  --color-data-pending: #8A948F;
+  --color-data-visits: #4F5D75;
+  --color-info: #1D4E89;
+  --color-info-tint: #EAF1F9;
+  --color-facility: #1D4E89;
+  --color-visited-gray: #728078;
+  --color-chart-reached: var(--color-data-reached);
+  --color-chart-pending: var(--color-data-pending);
+  --color-chart-unreachable: var(--color-data-unreached);
+
+  /* Type: seven sizes only */
+  --fs-label: 12px;
+  --fs-small: 14px;
+  --fs-body: 16px;
+  --fs-title: 18px;
+  --fs-dialog: 22px;
+  --fs-headline: 28px;
+  --fs-display: 36px;
+
+  /* Spacing, radii, elevation */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 999px;
+  --shadow-card: none;
+  --shadow-raised: 0 8px 28px rgba(12, 51, 59, 0.10);
+  --shadow-overlay: 0 24px 64px rgba(12, 51, 59, 0.28);
+  --shadow-sticky: 0 1px 0 #E4E0D3;
+  --ease-drawer: cubic-bezier(.32, .72, 0, 1);
+
+  /* Short aliases used across the stylesheets */
+  --ground: var(--color-ground);
+  --surface: var(--color-surface);
+  --sunken: var(--color-surface-sunken);
+  --line: var(--color-line);
+  --line-soft: var(--color-line-subtle);
+  --line-strong: var(--color-line-strong);
+  --line-control: var(--color-line-control);
+  --ink: var(--color-text-main);
+  --ink-2: var(--color-text-secondary);
+  --ink-3: var(--color-text-muted);
+  --brand: var(--color-brand);
+  --brand-hover: var(--color-brand-hover);
+  --brand-tint: var(--color-brand-tint);
+  --brand-soft: var(--color-brand-light);
+  --brand-subtle: var(--color-brand-subtle);
+  --on-brand: var(--color-on-brand);
+  --red: var(--color-red);
+  --red-tint: var(--color-red-tint);
+  --red-ink: var(--color-red-text);
+  --amber: var(--color-amber);
+  --amber-tint: var(--color-amber-tint);
+  --amber-ink: var(--color-amber-text);
+  --amber-border: var(--color-amber-border);
+  --green: var(--color-green);
+  --green-tint: var(--color-green-tint);
+  --green-ink: var(--color-green-text);
+  --green-border: var(--color-green-border);
+  --blue: var(--color-info);
+  --blue-tint: var(--color-info-tint);
+  --s1: var(--color-data-reached);
+  --s2: var(--color-data-unreached);
+  --s3: var(--color-data-visits);
+  --grey-mark: var(--color-data-pending);
+
+  /* Families: Plex Sans for the interface and figures, Mukta for Devanagari */
+  --sans: 'IBM Plex Sans', 'Mukta', 'Noto Sans Devanagari', system-ui, sans-serif;
+  --sans-hi: 'Mukta', 'Noto Sans Devanagari', 'IBM Plex Sans', system-ui, sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, Consolas, monospace;
+  --font-sans: var(--sans);
+  --font-mono: var(--mono);
+}

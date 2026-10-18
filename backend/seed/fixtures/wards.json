@@ -1,0 +1,503 @@
+{
+  "retrieved_at": "2026-10-14",
+  "districts": {
+    "churu": {
+      "municipal_body": "Churu Nagar Parishad",
+      "hq_town": "Churu",
+      "lat": 28.2983,
+      "lng": 74.9679,
+      "lgd_code": "096",
+      "source_urls": [
+        "https://jankalyanfile.rajasthan.gov.in/WebMyWayFiles/DepartmentMaster/215/2026/Apr/30409/215c59b38b3-3a23-47d8-a5ac-83fc4b991cd6.pdf",
+        "https://lsg.rajasthan.gov.in/webapi//PublicPortal/DepartmentPages/GetDepartmentPageDetail?deptCode=371474&lookupCode=0&pageCode=2380",
+        "https://sec.rajasthan.gov.in/SE_PDFDownload.aspx"
+      ],
+      "wards": [
+        {
+          "number": 2,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        },
+        {
+          "number": 30,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        },
+        {
+          "number": 58,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        }
+      ]
+    },
+    "bikaner": {
+      "municipal_body": "Bikaner Nagar Nigam",
+      "hq_town": "Bikaner",
+      "lat": 28.0159,
+      "lng": 73.3171,
+      "lgd_code": "093",
+      "source_urls": [
+        "https://www.bikanermc.org/PDF/ward%20boundary%202025%20gazette.pdf",
+        "https://jankalyanfile.rajasthan.gov.in/WebMyWayFiles/DepartmentMaster/215/2026/Apr/30409/215a3a8c1ca-66fc-4f4f-bd0a-9ee26394bc48.pdf",
+        "https://sec.rajasthan.gov.in/SE_PDFDownload.aspx"
+      ],
+      "wards": [
+        {
+          "number": 1,
+          "name": "Islam Nagar",
+          "official_name": "Islam Nagar, Ansal Colony, Vishwakarma Colony",
+          "lgd_code": null
+        },
+        {
+          "number": 40,
+          "name": "Rampura Basti (part, Gali No. 17 area)",
+          "official_name": "Rampura Basti (part, Gali No. 17 area)",
+          "lgd_code": null
+        },
+        {
+          "number": 78,
+          "name": "Kasaiyon ki Bari",
+          "official_name": "Kasaiyon ki Bari, Jagman Kuan, Pabubari, Jinnah Road",
+          "lgd_code": null
+        }
+      ]
+    },
+    "jhunjhunu": {
+      "municipal_body": "Jhunjhunu Nagar Parishad",
+      "hq_town": "Jhunjhunu",
+      "lat": 28.1288,
+      "lng": 75.3993,
+      "lgd_code": "106",
+      "source_urls": [
+        "https://jankalyanfile.rajasthan.gov.in/WebMyWayFiles/DepartmentMaster/215/2026/Apr/30409/2151e306899-39af-4df7-afdc-fbfd5ea5d8e5.pdf",
+        "https://sec.rajasthan.gov.in/SE_PDFDownload.aspx"
+      ],
+      "wards": [
+        {
+          "number": 8,
+          "name": "Indira Nagar (part)",
+          "official_name": "Indira Nagar (part)",
+          "lgd_code": null
+        },
+        {
+          "number": 41,
+          "name": "Mohalla Muglan",
+          "official_name": "Mohalla Muglan",
+          "lgd_code": null
+        },
+        {
+          "number": 58,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        }
+      ]
+    },
+    "sikar": {
+      "municipal_body": "Sikar Nagar Parishad",
+      "hq_town": "Sikar",
+      "lat": 27.6092,
+      "lng": 75.1396,
+      "lgd_code": "114",
+      "source_urls": [
+        "https://jankalyanfile.rajasthan.gov.in/WebMyWayFiles/DepartmentMaster/215/2026/Apr/30409/2158044a09c-ab02-4daa-8e57-dc7d64d6b810.pdf",
+        "https://sec.rajasthan.gov.in/SE_PDFDownload.aspx"
+      ],
+      "wards": [
+        {
+          "number": 5,
+          "name": "Zamindaran Mohalla (part)",
+          "official_name": "Zamindaran Mohalla (part)",
+          "lgd_code": null
+        },
+        {
+          "number": 35,
+          "name": "Todi Nagar Yojana",
+          "official_name": "Todi Nagar Yojana",
+          "lgd_code": null
+        },
+        {
+          "number": 55,
+          "name": "Shivsinghpura (part)",
+          "official_name": "Shivsinghpura (part)",
+          "lgd_code": null
+        }
+      ]
+    },
+    "jayashankar-bhupalapally": {
+      "municipal_body": "Bhupalapally Municipality",
+      "hq_town": "Bhupalpally",
+      "lat": 18.4381,
+      "lng": 79.8685,
+      "lgd_code": "687",
+      "source_urls": [
+        "https://bhupalapallymunicipality.telangana.gov.in/pages/council-page",
+        "https://tsec.gov.in/knowPRUrban.do"
+      ],
+      "wards": [
+        {
+          "number": 3,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        },
+        {
+          "number": 15,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        },
+        {
+          "number": 28,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        }
+      ]
+    },
+    "jogulamba-gadwal": {
+      "municipal_body": "Gadwal Municipality",
+      "hq_town": "Gadwal",
+      "lat": 16.2347,
+      "lng": 77.7946,
+      "lgd_code": "695",
+      "source_urls": [
+        "https://gadwalmunicipality.telangana.gov.in/pages/council-page",
+        "https://gadwalmunicipality.telangana.gov.in/pages/staff-directory",
+        "https://tsec.gov.in/knowPRUrban.do"
+      ],
+      "wards": [
+        {
+          "number": 2,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        },
+        {
+          "number": 20,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        },
+        {
+          "number": 36,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        }
+      ]
+    },
+    "narayanpet": {
+      "municipal_body": "Narayanpet Municipality",
+      "hq_town": "Narayanpet",
+      "lat": 16.7478,
+      "lng": 77.495,
+      "lgd_code": "721",
+      "source_urls": [
+        "https://narayanpetmunicipality.telangana.gov.in/pages/council-page",
+        "https://tsec.gov.in/knowPRUrban.do"
+      ],
+      "wards": [
+        {
+          "number": 2,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        },
+        {
+          "number": 12,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        },
+        {
+          "number": 23,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        }
+      ]
+    },
+    "yadadri-bhuvanagiri": {
+      "municipal_body": "Bhongir Municipality",
+      "hq_town": "Bhongir (Bhuvanagiri)",
+      "lat": 17.5173,
+      "lng": 78.8863,
+      "lgd_code": "697",
+      "source_urls": [
+        "https://bhongirmunicipality.telangana.gov.in/pages/council-page",
+        "https://tsec.gov.in/knowPRUrban.do"
+      ],
+      "wards": [
+        {
+          "number": 4,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        },
+        {
+          "number": 18,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        },
+        {
+          "number": 33,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        }
+      ]
+    },
+    "dewas": {
+      "municipal_body": "Dewas Nagar Palik Nigam (Dewas Municipal Corporation)",
+      "hq_town": "Dewas",
+      "lat": 22.9636,
+      "lng": 76.0549,
+      "lgd_code": "402",
+      "source_urls": [
+        "https://dmcward.info/"
+      ],
+      "wards": [
+        {
+          "number": 1,
+          "name": "Bilawali",
+          "official_name": "Bilawali (बिलावली)",
+          "lgd_code": null
+        },
+        {
+          "number": 23,
+          "name": "Kalani Bagh",
+          "official_name": "Kalani Bagh",
+          "lgd_code": null
+        },
+        {
+          "number": 45,
+          "name": "Nagda",
+          "official_name": "Nagda (नागदा)",
+          "lgd_code": null
+        }
+      ]
+    },
+    "katni": {
+      "municipal_body": "Nagar Palik Nigam Katni (Municipal Corporation)",
+      "hq_town": "Katni (Murwara)",
+      "lat": 23.834,
+      "lng": 80.3925,
+      "lgd_code": "413",
+      "source_urls": [
+        "https://mplocalelection.mp.gov.in/mms/ERMS/finalVoterListUrben.aspx",
+        "https://ckandev.indiadataportal.com/dataset/a7419751-ac37-46ad-b938-638cda7b7b60/resource/19df978a-675e-4ff5-8015-d0e1de447319/download/district-lgd-codes.csv",
+        "https://nominatim.openstreetmap.org/search?q=Katni,+Madhya+Pradesh&format=json"
+      ],
+      "wards": [
+        {
+          "number": 8,
+          "name": "Jalpa Devi",
+          "official_name": "Jalpa Devi Ward",
+          "lgd_code": null
+        },
+        {
+          "number": 24,
+          "name": "Ishwaripura",
+          "official_name": "Ishwaripura",
+          "lgd_code": null
+        },
+        {
+          "number": 44,
+          "name": "Vishram Baba",
+          "official_name": "Vishram Baba Ward",
+          "lgd_code": null
+        }
+      ]
+    },
+    "ratlam": {
+      "municipal_body": "Ratlam Nagar Palik Nigam (Ratlam Municipal Corporation)",
+      "hq_town": "Ratlam",
+      "lat": 23.3311,
+      "lng": 75.0361,
+      "lgd_code": "423",
+      "source_urls": [
+        "https://rmcratlam.in/corporation"
+      ],
+      "wards": [
+        {
+          "number": 7,
+          "name": "Alkapuri",
+          "official_name": "Alkapuri (अलकापुरी)",
+          "lgd_code": null
+        },
+        {
+          "number": 26,
+          "name": "Thawariya Bazar",
+          "official_name": "Thawariya Bazar (थावरिया बाजार)",
+          "lgd_code": null
+        },
+        {
+          "number": 47,
+          "name": "Mominpura",
+          "official_name": "Mominpura (मोमिनपुरा)",
+          "lgd_code": null
+        }
+      ]
+    },
+    "shahdol": {
+      "municipal_body": "Nagar Palika Parishad Shahdol (Municipal Council)",
+      "hq_town": "Shahdol",
+      "lat": 23.3002,
+      "lng": 81.3648,
+      "lgd_code": "429",
+      "source_urls": [
+        "https://mplocalelection.mp.gov.in/mms/ERMS/finalVoterListUrben.aspx",
+        "https://ckandev.indiadataportal.com/dataset/a7419751-ac37-46ad-b938-638cda7b7b60/resource/19df978a-675e-4ff5-8015-d0e1de447319/download/district-lgd-codes.csv",
+        "https://nominatim.openstreetmap.org/search?city=Shahdol&state=Madhya+Pradesh&country=India&format=json"
+      ],
+      "wards": [
+        {
+          "number": 6,
+          "name": "Pandav Nagar",
+          "official_name": "Pandav Nagar Ward",
+          "lgd_code": null
+        },
+        {
+          "number": 20,
+          "name": "Jawahar",
+          "official_name": "Jawahar Ward",
+          "lgd_code": null
+        },
+        {
+          "number": 33,
+          "name": "Bhuibandh",
+          "official_name": "Bhuibandh Ward",
+          "lgd_code": null
+        }
+      ]
+    },
+    "raigad": {
+      "municipal_body": "Alibag Nagar Parishad",
+      "hq_town": "Alibag",
+      "lat": 18.6498,
+      "lng": 72.8765,
+      "lgd_code": "491",
+      "source_urls": [
+        "https://cdn.s3waas.gov.in/s344c4c17332cace2124a1a836d9fc4b6f/uploads/2022/06/2022060951.pdf",
+        "https://raigad.gov.in/?p=46659"
+      ],
+      "wards": [
+        {
+          "number": 1,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        },
+        {
+          "number": 5,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        },
+        {
+          "number": 10,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        }
+      ]
+    },
+    "sangli": {
+      "municipal_body": "Sangli-Miraj-Kupwad City Municipal Corporation",
+      "hq_town": "Sangli",
+      "lat": 16.8503,
+      "lng": 74.5949,
+      "lgd_code": "493",
+      "source_urls": [
+        "https://www.smkc.gov.in/pdf/Election%20Final%202025/Ward%20boundries%20English.pdf"
+      ],
+      "wards": [
+        {
+          "number": 1,
+          "name": "Kupwad Prakash Nagar",
+          "official_name": "Kupwad Prakash Nagar, Ramkrishna Nagar, Kapase Plot",
+          "lgd_code": null
+        },
+        {
+          "number": 11,
+          "name": "Chintamani Nagar",
+          "official_name": "Chintamani Nagar, Sangli Industrial Area",
+          "lgd_code": null
+        },
+        {
+          "number": 20,
+          "name": "Uttamnagar",
+          "official_name": "Uttamnagar, Inamdar Mala Vasahat, Krishna Ghat Vasahat",
+          "lgd_code": null
+        }
+      ]
+    },
+    "solapur": {
+      "municipal_body": "Solapur Municipal Corporation",
+      "hq_town": "Solapur",
+      "lat": 17.67,
+      "lng": 75.9008,
+      "lgd_code": "496",
+      "source_urls": [
+        "https://www.solapurcorporation.gov.in/smc/current_activity/1%20te%2026%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AD%E0%A4%BE%E0%A4%97%20%E0%A4%A8%E0%A4%BF%E0%A4%B9%E0%A4%BE%E0%A4%AF%20%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A5%80.pdf",
+        "https://www.solapurcorporation.gov.in/smc/whatsnew_marathi.aspx"
+      ],
+      "wards": [
+        {
+          "number": 1,
+          "name": "Hanuman Nagar",
+          "official_name": "Hanuman Nagar, Vardhaman Nagar, Shelgi Gaothan",
+          "lgd_code": null
+        },
+        {
+          "number": 13,
+          "name": "Walchand College area",
+          "official_name": "Walchand College area, Pachha Peth (part), Bapuji Nagar",
+          "lgd_code": null
+        },
+        {
+          "number": 26,
+          "name": "Kumathe Gaothan (part)",
+          "official_name": "Kumathe Gaothan (part), Dilip Nagar, Rohini Nagar, Vishnupuri",
+          "lgd_code": null
+        }
+      ]
+    },
+    "yavatmal": {
+      "municipal_body": "Yavatmal Nagar Parishad",
+      "hq_town": "Yavatmal",
+      "lat": 20.3903,
+      "lng": 78.1329,
+      "lgd_code": "500",
+      "source_urls": [
+        "https://cdn.s3waas.gov.in/s39ad6aaed513b73148b7d49f70afcfb32/uploads/2025/10/17600187705135.pdf",
+        "https://cdn.s3waas.gov.in/s39ad6aaed513b73148b7d49f70afcfb32/uploads/2022/06/2022061619.pdf"
+      ],
+      "wards": [
+        {
+          "number": 1,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        },
+        {
+          "number": 15,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        },
+        {
+          "number": 29,
+          "name": null,
+          "official_name": null,
+          "lgd_code": null
+        }
+      ]
+    }
+  }
+}

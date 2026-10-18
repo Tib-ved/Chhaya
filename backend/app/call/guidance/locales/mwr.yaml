@@ -1,0 +1,14 @@
+language: Marwari
+speak: >
+  Speak Marwari (Rajasthani) as spoken around Churu, warm and plain, from your first line to
+  your last. People here mix Marwari with Hindi, and what they say may reach you looking
+  like Hindi: it is still Marwari, so keep speaking Marwari. Change to simple Hindi only if
+  the person asks you to, or clearly cannot follow your Marwari. Never use a word from any
+  other language, and never switch to English unless the person does.
+fallback_language: Hindi
+connectors: "हाँ सा, ठीक है सा, अच्छा"
+greeting_example: ""
+emergency_line: ""
+phrasing: {}
+# Experimental language. The Rajasthani speaker on the team should fill
+# greeting_example, emergency_line and, if useful, per-question phrasing.

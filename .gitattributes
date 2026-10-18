@@ -1,0 +1,10 @@
+# Paths left out of the public export made with `git archive` at submission.
+# Private planning material lives only under these three folders.
+docs/ export-ignore
+reports/ export-ignore
+research_notes/ export-ignore
+
+# Shell scripts keep LF line endings on every machine: bash fails on CRLF.
+*.sh text eol=lf
+.devin/ export-ignore
+.impeccable/ export-ignore

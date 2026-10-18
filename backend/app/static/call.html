@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Chhaya call test</title>
+<style>
+  body { font: 16px system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; }
+  label { display: block; margin-top: 1rem; }
+  input { width: 100%; padding: .4rem; box-sizing: border-box; }
+  button { padding: .6rem 1rem; margin: 1rem .5rem 0 0; }
+  #log { white-space: pre-wrap; background: #f4f4f4; padding: 1rem; margin-top: 1rem; min-height: 6rem; }
+</style>
+<h1>Chhaya call test</h1>
+<p>A bare page for testing the voice agent with a microphone. Use headphones, or the agent will hear itself.</p>
+<p id="account" hidden><span id="who"></span> <a id="signout" href="/login">Sign out</a></p>
+<label>Internal secret (leave empty if you are signed in) <input id="secret" type="password" autocomplete="off"></label>
+<label>Call id <input id="call" placeholder="churu_heat_20261012_r01_1"></label>
+<button id="start">Start call</button>
+<button id="stop" disabled>Hang up</button>
+<div id="log"></div>
+<script>
+const $ = id => document.getElementById(id);
+const log = text => { $("log").textContent += text + "\n"; };
+let socket = null, micContext = null, playContext = null, micStream = null;
+let playAt = 0, playing = [];
+
+const captureWorklet = `
+class Capture extends AudioWorkletProcessor {
+  process(inputs) {
+    const channel = inputs[0][0];
+    if (channel) {
+      const pcm = new Int16Array(channel.length);
+      for (let i = 0; i < channel.length; i++) {
+        const sample = Math.max(-1, Math.min(1, channel[i]));
+        pcm[i] = sample < 0 ? sample * 0x8000 : sample * 0x7fff;
+      }
+      this.port.postMessage(pcm.buffer, [pcm.buffer]);
+    }
+    return true;
+  }
+}
+registerProcessor("capture", Capture);`;
+
+function play(buffer) {
+  const pcm = new Int16Array(buffer.slice(0, buffer.byteLength - (buffer.byteLength % 2)));  // ignore a trailing odd byte
+  if (!pcm.length) return;
+  const audio = playContext.createBuffer(1, pcm.length, 24000);
+  const data = audio.getChannelData(0);
+  for (let i = 0; i < pcm.length; i++) data[i] = pcm[i] / 0x8000;
+  const source = playContext.createBufferSource();
+  source.buffer = audio;
+  source.connect(playContext.destination);
+  playAt = Math.max(playAt, playContext.currentTime + 0.05);
+  source.start(playAt);
+  playAt += audio.duration;
+  playing.push(source);
+  source.onended = () => { playing = playing.filter(item => item !== source); };
+}
+
+function clearPlayback() {
+  playing.forEach(source => { try { source.stop(); } catch (error) {} });
+  playing = [];
+  playAt = 0;
+}
+
+function stopMicrophone() {
+  if (micStream) micStream.getTracks().forEach(track => track.stop());
+  if (micContext) micContext.close();
+  micStream = micContext = null;
+  resetButtons();
+}
+
+$("stop").onclick = () => { if (socket) socket.close(); };
+
+// Shows who is signed in, if anyone. Without a session the page works as before.
+fetch("/auth/me", {credentials: "same-origin"}).then(async response => {
+  if (!response.ok) return;
+  const {email} = await response.json();
+  if (typeof email !== "string" || !email) return;
+  $("who").textContent = "Signed in as " + email;
+  $("account").hidden = false;
+}).catch(() => {});
+
+$("signout").onclick = async event => {
+  event.preventDefault();
+  try { await fetch("/auth/logout", {method: "POST", credentials: "same-origin"}); } catch (error) {}
+  location.assign("/login");
+};
+
+function resetButtons() {
+  $("start").disabled = false;
+  $("stop").disabled = true;
+}
+
+$("start").onclick = async () => {
+  $("start").disabled = true;
+  let step = "starting";
+  try {
+    const callId = $("call").value.trim();
+
+    step = "microphone";
+    micStream = await navigator.mediaDevices.getUserMedia({
+      audio: {channelCount: 1, echoCancellation: true, noiseSuppression: true},
+    });
+
+    step = "ticket";
+    const headers = {};
+    const secret = $("secret").value;
+    if (secret) headers["X-Internal-Secret"] = secret;
+    const response = await fetch(`/admin/calls/${encodeURIComponent(callId)}/browser-ticket`, {
+      method: "POST", headers, credentials: "same-origin",
+    });
+    if (!response.ok) {
+      log(`Could not start: the server answered ${response.status}`);
+      stopMicrophone();
+      return;
+    }
+    const {ticket} = await response.json();
+
+    step = "audio";
+    micContext = new AudioContext({sampleRate: 16000});
+    if (!playContext) playContext = new AudioContext({sampleRate: 24000});
+    await playContext.resume();
+    const moduleUrl = URL.createObjectURL(new Blob([captureWorklet], {type: "application/javascript"}));
+    await micContext.audioWorklet.addModule(moduleUrl);
+    const capture = new AudioWorkletNode(micContext, "capture");
+    micContext.createMediaStreamSource(micStream).connect(capture);
+
+    step = "connection";
+    const scheme = location.protocol === "https:" ? "wss" : "ws";
+    socket = new WebSocket(`${scheme}://${location.host}/browser/stream?ticket=${encodeURIComponent(ticket)}`);
+    socket.binaryType = "arraybuffer";
+    // Every block is sent, silent or not: the service finds the end of a turn from trailing silence.
+    capture.port.onmessage = event => { if (socket && socket.readyState === 1) socket.send(event.data); };
+    socket.onopen = () => {
+      log("Connected. The agent speaks first.");
+      $("stop").disabled = false;
+    };
+    socket.onmessage = event => {
+      if (typeof event.data !== "string") { play(event.data); return; }
+      const message = JSON.parse(event.data);
+      if (message.type === "clear") clearPlayback();
+      if (message.type === "ended") { log(`Call ended: ${message.status}`); socket.close(); }
+    };
+    socket.onclose = () => { log("Disconnected."); stopMicrophone(); socket = null; };  // audio already received keeps playing
+  } catch (error) {
+    const reasons = {
+      microphone: "Microphone permission was refused or no microphone was found",
+      ticket: "Could not reach the server to start the call",
+      audio: "Could not set up audio in this browser",
+      connection: "Could not open the call connection",
+    };
+    log(`${reasons[step] || "Could not start the call"}.`);
+    stopMicrophone();
+  }
+};
+</script>
+</html>

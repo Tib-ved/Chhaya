@@ -1,0 +1,12 @@
+# What `gcloud run deploy --source` must NOT upload. Local settings hold real credentials.
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+tests/
+scripts/
+.gcloudignore
+.venv-*/

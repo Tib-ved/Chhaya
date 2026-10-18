@@ -1,0 +1,7 @@
+language: Gujarati
+speak: Speak simple everyday Gujarati.
+greeting_example: ""
+emergency_line: ""
+phrasing: {}
+connectors: "હા, બરાબર, અચ્છા"
+# A Gujarati speaker on the team should fill greeting_example and emergency_line.

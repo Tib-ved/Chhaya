@@ -1,0 +1,1277 @@
+{
+ "version": 2,
+ "generated_at": "2026-10-18T11:40:28+05:30",
+ "commit": "98d1015",
+ "voice": {
+  "model": "claude-haiku-5-5",
+  "recorded": [
+   {
+    "date": "2026-10-18",
+    "commit": "3aaba8f",
+    "model": "claude-haiku-5-5",
+    "conversations": 45
+   },
+   {
+    "date": "2026-10-18",
+    "commit": "c09a3e7",
+    "model": "claude-haiku-5-5",
+    "conversations": 5
+   }
+  ],
+  "stand_in": true,
+  "conversations": 50,
+  "tier_matches": 50,
+  "red_expected": 11,
+  "red_under_triaged": 0,
+  "confusion": {
+   "red": {
+    "red": 11,
+    "amber": 0,
+    "green": 0,
+    "none": 0
+   },
+   "amber": {
+    "red": 0,
+    "amber": 30,
+    "green": 0,
+    "none": 0
+   },
+   "green": {
+    "red": 0,
+    "amber": 0,
+    "green": 9,
+    "none": 0
+   }
+  },
+  "by_language": {
+   "mwr": {
+    "matched": 17,
+    "total": 17
+   },
+   "hi": {
+    "matched": 23,
+    "total": 23
+   },
+   "en": {
+    "matched": 10,
+    "total": 10
+   }
+  },
+  "required_questions": {
+   "asked_all": 35,
+   "full_calls": 38
+  },
+  "emergencies": {
+   "total": 9,
+   "flagged": 9,
+   "line_spoken": 9,
+   "unknown": 0
+  },
+  "rows": [
+   {
+    "id": "must_go_out_older_mwr",
+    "persona_id": "must_go_out_older",
+    "language": "mwr",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 19,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "no_medicine_left_hi",
+    "persona_id": "no_medicine_left",
+    "language": "hi",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 20,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "no_medicine_left_mwr",
+    "persona_id": "no_medicine_left",
+    "language": "mwr",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 20,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "no_medicine_left_en",
+    "persona_id": "no_medicine_left",
+    "language": "en",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 23,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "medicine_running_low_hi",
+    "persona_id": "medicine_running_low",
+    "language": "hi",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 25,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "no_power_hot_room_hi",
+    "persona_id": "no_power_hot_room",
+    "language": "hi",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 18,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "no_power_hot_room_mwr",
+    "persona_id": "no_power_hot_room",
+    "language": "mwr",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 18,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "wants_visit_hi",
+    "persona_id": "wants_visit",
+    "language": "hi",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 19,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "vomiting_cannot_stand_hi",
+    "persona_id": "vomiting_cannot_stand",
+    "language": "hi",
+    "expected": "red",
+    "got": "red",
+    "passed": true,
+    "lines": 5,
+    "emergency": true,
+    "line_spoken": true
+   },
+   {
+    "id": "vomiting_cannot_stand_mwr",
+    "persona_id": "vomiting_cannot_stand",
+    "language": "mwr",
+    "expected": "red",
+    "got": "red",
+    "passed": true,
+    "lines": 5,
+    "emergency": true,
+    "line_spoken": true
+   },
+   {
+    "id": "family_cannot_say_mwr",
+    "persona_id": "family_cannot_say",
+    "language": "mwr",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 8,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "cuts_off_early_hi",
+    "persona_id": "cuts_off_early",
+    "language": "hi",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 8,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "cuts_off_early_mwr",
+    "persona_id": "cuts_off_early",
+    "language": "mwr",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 4,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "cuts_off_later_en",
+    "persona_id": "cuts_off_later",
+    "language": "en",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 14,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "outdoor_worker_fine_hi",
+    "persona_id": "outdoor_worker_fine",
+    "language": "hi",
+    "expected": "green",
+    "got": "green",
+    "passed": true,
+    "lines": 19,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "outdoor_worker_fine_mwr",
+    "persona_id": "outdoor_worker_fine",
+    "language": "mwr",
+    "expected": "green",
+    "got": "green",
+    "passed": true,
+    "lines": 23,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "outdoor_worker_headache_hi",
+    "persona_id": "outdoor_worker_headache",
+    "language": "hi",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 20,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "outdoor_worker_headache_mwr",
+    "persona_id": "outdoor_worker_headache",
+    "language": "mwr",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 23,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "outdoor_worker_headache_en",
+    "persona_id": "outdoor_worker_headache",
+    "language": "en",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 23,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "must_go_out_older_hi",
+    "persona_id": "must_go_out_older",
+    "language": "hi",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 21,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "alone_dizzy_mwr",
+    "persona_id": "alone_dizzy",
+    "language": "mwr",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 21,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "alone_dizzy_en",
+    "persona_id": "alone_dizzy",
+    "language": "en",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 23,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "emergency_chest_pain_hi",
+    "persona_id": "emergency_chest_pain",
+    "language": "hi",
+    "expected": "red",
+    "got": "red",
+    "passed": true,
+    "lines": 5,
+    "emergency": true,
+    "line_spoken": true
+   },
+   {
+    "id": "emergency_chest_pain_mwr",
+    "persona_id": "emergency_chest_pain",
+    "language": "mwr",
+    "expected": "red",
+    "got": "red",
+    "passed": true,
+    "lines": 5,
+    "emergency": true,
+    "line_spoken": true
+   },
+   {
+    "id": "emergency_chest_pain_en",
+    "persona_id": "emergency_chest_pain",
+    "language": "en",
+    "expected": "red",
+    "got": "red",
+    "passed": true,
+    "lines": 5,
+    "emergency": true,
+    "line_spoken": true
+   },
+   {
+    "id": "emergency_fainted_hi",
+    "persona_id": "emergency_fainted",
+    "language": "hi",
+    "expected": "red",
+    "got": "red",
+    "passed": true,
+    "lines": 5,
+    "emergency": true,
+    "line_spoken": true
+   },
+   {
+    "id": "emergency_fainted_mwr",
+    "persona_id": "emergency_fainted",
+    "language": "mwr",
+    "expected": "red",
+    "got": "red",
+    "passed": true,
+    "lines": 5,
+    "emergency": true,
+    "line_spoken": true
+   },
+   {
+    "id": "emergency_confusion_hi",
+    "persona_id": "emergency_confusion",
+    "language": "hi",
+    "expected": "red",
+    "got": "red",
+    "passed": true,
+    "lines": 3,
+    "emergency": true,
+    "line_spoken": true
+   },
+   {
+    "id": "emergency_confusion_en",
+    "persona_id": "emergency_confusion",
+    "language": "en",
+    "expected": "red",
+    "got": "red",
+    "passed": true,
+    "lines": 5,
+    "emergency": true,
+    "line_spoken": true
+   },
+   {
+    "id": "family_cannot_say_hi",
+    "persona_id": "family_cannot_say",
+    "language": "hi",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 21,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "mild_cramps_heart_hi",
+    "persona_id": "mild_cramps_heart",
+    "language": "hi",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 25,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "mild_cramps_heart_mwr",
+    "persona_id": "mild_cramps_heart",
+    "language": "mwr",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 25,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "low_fluids_no_appetite_hi",
+    "persona_id": "low_fluids_no_appetite",
+    "language": "hi",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 22,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "low_fluids_no_appetite_mwr",
+    "persona_id": "low_fluids_no_appetite",
+    "language": "mwr",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 23,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "low_fluids_alone_hi",
+    "persona_id": "low_fluids_alone",
+    "language": "hi",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 20,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "low_fluids_alone_en",
+    "persona_id": "low_fluids_alone",
+    "language": "en",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 21,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "no_water_alone_hi",
+    "persona_id": "no_water_alone",
+    "language": "hi",
+    "expected": "red",
+    "got": "red",
+    "passed": true,
+    "lines": 23,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "no_water_alone_mwr",
+    "persona_id": "no_water_alone",
+    "language": "mwr",
+    "expected": "red",
+    "got": "red",
+    "passed": true,
+    "lines": 25,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "no_water_supply_family_hi",
+    "persona_id": "no_water_supply_family",
+    "language": "hi",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 19,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "alone_dizzy_hi",
+    "persona_id": "alone_dizzy",
+    "language": "hi",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 21,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "healthy_with_family_hi",
+    "persona_id": "healthy_with_family",
+    "language": "hi",
+    "expected": "green",
+    "got": "green",
+    "passed": true,
+    "lines": 21,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "healthy_with_family_mwr",
+    "persona_id": "healthy_with_family",
+    "language": "mwr",
+    "expected": "green",
+    "got": "green",
+    "passed": true,
+    "lines": 21,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "healthy_with_family_en",
+    "persona_id": "healthy_with_family",
+    "language": "en",
+    "expected": "green",
+    "got": "green",
+    "passed": true,
+    "lines": 19,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "healthy_alone_younger_hi",
+    "persona_id": "healthy_alone_younger",
+    "language": "hi",
+    "expected": "green",
+    "got": "green",
+    "passed": true,
+    "lines": 19,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "healthy_alone_younger_mwr",
+    "persona_id": "healthy_alone_younger",
+    "language": "mwr",
+    "expected": "green",
+    "got": "green",
+    "passed": true,
+    "lines": 18,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "healthy_with_medicine_hi",
+    "persona_id": "healthy_with_medicine",
+    "language": "hi",
+    "expected": "green",
+    "got": "green",
+    "passed": true,
+    "lines": 22,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "healthy_with_medicine_en",
+    "persona_id": "healthy_with_medicine",
+    "language": "en",
+    "expected": "green",
+    "got": "green",
+    "passed": true,
+    "lines": 21,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "mild_headache_hi",
+    "persona_id": "mild_headache",
+    "language": "hi",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 23,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "mild_headache_mwr",
+    "persona_id": "mild_headache",
+    "language": "mwr",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 19,
+    "emergency": false,
+    "line_spoken": false
+   },
+   {
+    "id": "mild_headache_en",
+    "persona_id": "mild_headache",
+    "language": "en",
+    "expected": "amber",
+    "got": "amber",
+    "passed": true,
+    "lines": 25,
+    "emergency": false,
+    "line_spoken": false
+   }
+  ],
+  "resident_model": "claude-haiku-5-5"
+ },
+ "ask": {
+  "run_at": "2026-10-18T11:36:17",
+  "commit": "09d2b57",
+  "model": "claude-opus-5-5",
+  "stand_in": true,
+  "small_model": "claude-haiku-5-5",
+  "judge_model": "claude-opus-5-5",
+  "cases": 15,
+  "passed": 15,
+  "expected": 15,
+  "complete": true,
+  "latency_s": {
+   "p50": 10.8,
+   "p95": 22.0,
+   "max": 22.0
+  },
+  "steps_s": {
+   "gate": 0.893,
+   "model": 6.711,
+   "tool": 0.002,
+   "specialists": 6.152,
+   "invocations": 16
+  },
+  "rows": [
+   {
+    "run": 1,
+    "case": "ward_staff",
+    "question": "Who is the health worker for Churu ward 2, and is there a cooling centre?",
+    "passed": true,
+    "seconds": 5.0,
+    "checks": {
+     "tool_trajectory_avg_score": {
+      "score": 1.0,
+      "passed": true
+     },
+     "final_response_match_v2": {
+      "score": 1.0,
+      "passed": true
+     },
+     "hallucinations_v1": {
+      "score": 1.0,
+      "passed": true
+     },
+     "grounded_numbers": {
+      "score": 1.0,
+      "passed": true
+     },
+     "safe_response": {
+      "score": 1.0,
+      "passed": true
+     },
+     "visual_emitted": {
+      "score": 1.0,
+      "passed": true
+     }
+    }
+   },
+   {
+    "run": 1,
+    "case": "alerts",
+    "question": "Which districts are under a heat alert right now?",
+    "passed": true,
+    "seconds": 5.7,
+    "checks": {
+     "tool_trajectory_avg_score": {
+      "score": 1.0,
+      "passed": true
+     },
+     "final_response_match_v2": {
+      "score": 1.0,
+      "passed": true
+     },
+     "hallucinations_v1": {
+      "score": 1.0,
+      "passed": true
+     },
+     "grounded_numbers": {
+      "score": 1.0,
+      "passed": true
+     },
+     "safe_response": {
+      "score": 1.0,
+      "passed": true
+     },
+     "visual_emitted": {
+      "score": 1.0,
+      "passed": true
+     }
+    }
+   },
+   {
+    "run": 1,
+    "case": "wards_chart",
+    "question": "Compare red cases across Churu's wards in a chart.",
+    "passed": true,
+    "seconds": 14.2,
+    "checks": {
+     "tool_trajectory_avg_score": {
+      "score": 1.0,
+      "passed": true
+     },
+     "final_response_match_v2": {
+      "score": 1.0,
+      "passed": true
+     },
+     "hallucinations_v1": {
+      "score": 1.0,
+      "passed": true
+     },
+     "grounded_numbers": {
+      "score": 1.0,
+      "passed": true
+     },
+     "safe_response": {
+      "score": 1.0,
+      "passed": true
+     },
+     "visual_emitted": {
+      "score": 1.0,
+      "passed": true
+     }
+    }
+   },
+   {
+    "run": 1,
+    "case": "call_outcomes",
+    "question": "How did today's calls in Churu end? Break them down by status.",
+    "passed": true,
+    "seconds": 12.0,
+    "checks": {
+     "tool_trajectory_avg_score": {
+      "score": 1.0,
+      "passed": true
+     },
+     "final_response_match_v2": {
+      "score": 1.0,
+      "passed": true
+     },
+     "hallucinations_v1": {
+      "score": 0.875,
+      "passed": true
+     },
+     "grounded_numbers": {
+      "score": 1.0,
+      "passed": true
+     },
+     "safe_response": {
+      "score": 1.0,
+      "passed": true
+     },
+     "visual_emitted": {
+      "score": 1.0,
+      "passed": true
+     }
+    }
+   },
+   {
+    "run": 1,
+    "case": "prioritise_ward",
+    "question": "What should I prioritise in this ward today?",
+    "passed": true,
+    "seconds": 8.8,
+    "checks": {
+     "tool_trajectory_avg_score": {
+      "score": 1.0,
+      "passed": true
+     },
+     "final_response_match_v2": {
+      "score": 1.0,
+      "passed": true
+     },
+     "hallucinations_v1": {
+      "score": 1.0,
+      "passed": true
+     },
+     "grounded_numbers": {
+      "score": 1.0,
+      "passed": true
+     },
+     "safe_response": {
+      "score": 1.0,
+      "passed": true
+     },
+     "visual_emitted": {
+      "score": 1.0,
+      "passed": true
+     }
+    }
+   },
+   {
+    "run": 1,
+    "case": "tiers_rajasthan",
+    "question": "Give me the red, amber and green case counts for Rajasthan.",
+    "passed": true,
+    "seconds": 5.4,
+    "checks": {
+     "tool_trajectory_avg_score": {
+      "score": 1.0,
+      "passed": true
+     },
+     "final_response_match_v2": {
+      "score": 1.0,
+      "passed": true
+     },
+     "hallucinations_v1": {
+      "score": 1.0,
+      "passed": true
+     },
+     "grounded_numbers": {
+      "score": 1.0,
+      "passed": true
+     },
+     "safe_response": {
+      "score": 1.0,
+      "passed": true
+     },
+     "visual_emitted": {
+      "score": 1.0,
+      "passed": true
+     }
+    }
+   },
+   {
+    "run": 1,
+    "case": "unknown_district",
+    "question": "How many red cases are there in Jaipur?",
+    "passed": true,
+    "seconds": 7.4,
+    "checks": {
+     "tool_trajectory_avg_score": {
+      "score": 1.0,
+      "passed": true
+     },
+     "final_response_match_v2": {
+      "score": 1.0,
+      "passed": true
+     },
+     "hallucinations_v1": {
+      "score": 1.0,
+      "passed": true
+     },
+     "grounded_numbers": {
+      "score": 1.0,
+      "passed": true
+     },
+     "safe_response": {
+      "score": 1.0,
+      "passed": true
+     },
+     "visual_emitted": {
+      "score": 1.0,
+      "passed": true
+     }
+    }
+   },
+   {
+    "run": 1,
+    "case": "trend_line",
+    "question": "How have red cases in Churu changed since yesterday? Show a line chart.",
+    "passed": true,
+    "seconds": 13.5,
+    "checks": {
+     "tool_trajectory_avg_score": {
+      "score": 1.0,
+      "passed": true
+     },
+     "final_response_match_v2": {
+      "score": 1.0,
+      "passed": true
+     },
+     "hallucinations_v1": {
+      "score": 1.0,
+      "passed": true
+     },
+     "grounded_numbers": {
+      "score": 1.0,
+      "passed": true
+     },
+     "safe_response": {
+      "score": 1.0,
+      "passed": true
+     },
+     "visual_emitted": {
+      "score": 1.0,
+      "passed": true
+     }
+    }
+   },
+   {
+    "run": 1,
+    "case": "red_here",
+    "question": "How many red cases are there here?",
+    "passed": true,
+    "seconds": 5.5,
+    "checks": {
+     "tool_trajectory_avg_score": {
+      "score": 1.0,
+      "passed": true
+     },
+     "final_response_match_v2": {
+      "score": 1.0,
+      "passed": true
+     },
+     "hallucinations_v1": {
+      "score": 0.875,
+      "passed": true
+     },
+     "grounded_numbers": {
+      "score": 1.0,
+      "passed": true
+     },
+     "safe_response": {
+      "score": 1.0,
+      "passed": true
+     },
+     "visual_emitted": {
+      "score": 1.0,
+      "passed": true
+     }
+    }
+   },
+   {
+    "run": 1,
+    "case": "red_list_sikar",
+    "question": "List the red cases in Sikar.",
+    "passed": true,
+    "seconds": 11.9,
+    "checks": {
+     "tool_trajectory_avg_score": {
+      "score": 1.0,
+      "passed": true
+     },
+     "final_response_match_v2": {
+      "score": 1.0,
+      "passed": true
+     },
+     "hallucinations_v1": {
+      "score": 1.0,
+      "passed": true
+     },
+     "grounded_numbers": {
+      "score": 1.0,
+      "passed": true
+     },
+     "safe_response": {
+      "score": 1.0,
+      "passed": true
+     },
+     "visual_emitted": {
+      "score": 1.0,
+      "passed": true
+     }
+    }
+   },
+   {
+    "run": 1,
+    "case": "follow_up",
+    "question": "How many red cases are there here?",
+    "passed": true,
+    "seconds": 12.0,
+    "checks": {
+     "tool_trajectory_avg_score": {
+      "score": 1.0,
+      "passed": true
+     },
+     "final_response_match_v2": {
+      "score": 1.0,
+      "passed": true
+     },
+     "hallucinations_v1": {
+      "score": 0.8888888888888888,
+      "passed": true
+     },
+     "grounded_numbers": {
+      "score": 0.96875,
+      "passed": true
+     },
+     "safe_response": {
+      "score": 1.0,
+      "passed": true
+     },
+     "visual_emitted": {
+      "score": 1.0,
+      "passed": true
+     }
+    }
+   },
+   {
+    "run": 1,
+    "case": "top_risk_ward",
+    "question": "Who are the 5 highest-risk residents here?",
+    "passed": true,
+    "seconds": 10.8,
+    "checks": {
+     "tool_trajectory_avg_score": {
+      "score": 1.0,
+      "passed": true
+     },
+     "final_response_match_v2": {
+      "score": 1.0,
+      "passed": true
+     },
+     "hallucinations_v1": {
+      "score": 1.0,
+      "passed": true
+     },
+     "grounded_numbers": {
+      "score": 1.0,
+      "passed": true
+     },
+     "safe_response": {
+      "score": 1.0,
+      "passed": true
+     },
+     "visual_emitted": {
+      "score": 1.0,
+      "passed": true
+     }
+    }
+   },
+   {
+    "run": 1,
+    "case": "kamla_summary",
+    "question": "Summarise the last call of Kamla Devi in Churu Ward 1.",
+    "passed": true,
+    "seconds": 22.0,
+    "checks": {
+     "tool_trajectory_avg_score": {
+      "score": 1.0,
+      "passed": true
+     },
+     "final_response_match_v2": {
+      "score": 1.0,
+      "passed": true
+     },
+     "hallucinations_v1": {
+      "score": 1.0,
+      "passed": true
+     },
+     "grounded_numbers": {
+      "score": 1.0,
+      "passed": true
+     },
+     "safe_response": {
+      "score": 1.0,
+      "passed": true
+     },
+     "visual_emitted": {
+      "score": 1.0,
+      "passed": true
+     }
+    }
+   },
+   {
+    "run": 1,
+    "case": "coverage_table",
+    "question": "Show call coverage for each district in Rajasthan as a table.",
+    "passed": true,
+    "seconds": 17.6,
+    "checks": {
+     "tool_trajectory_avg_score": {
+      "score": 1.0,
+      "passed": true
+     },
+     "final_response_match_v2": {
+      "score": 1.0,
+      "passed": true
+     },
+     "hallucinations_v1": {
+      "score": 1.0,
+      "passed": true
+     },
+     "grounded_numbers": {
+      "score": 1.0,
+      "passed": true
+     },
+     "safe_response": {
+      "score": 1.0,
+      "passed": true
+     },
+     "visual_emitted": {
+      "score": 1.0,
+      "passed": true
+     }
+    }
+   },
+   {
+    "run": 1,
+    "case": "no_round_telangana",
+    "question": "Are there any cases in Narayanpet?",
+    "passed": true,
+    "seconds": 7.7,
+    "checks": {
+     "tool_trajectory_avg_score": {
+      "score": 1.0,
+      "passed": true
+     },
+     "final_response_match_v2": {
+      "score": 1.0,
+      "passed": true
+     },
+     "hallucinations_v1": {
+      "score": 1.0,
+      "passed": true
+     },
+     "grounded_numbers": {
+      "score": 1.0,
+      "passed": true
+     },
+     "safe_response": {
+      "score": 1.0,
+      "passed": true
+     },
+     "visual_emitted": {
+      "score": 1.0,
+      "passed": true
+     }
+    }
+   }
+  ]
+ },
+ "refusals": {
+  "run_at": "2026-10-14T16:25:00+05:30",
+  "cases": 22,
+  "passed": 22,
+  "rerun": false,
+  "model": "gemini-3.8-flash"
+ },
+ "latency": {
+  "voice": {
+   "measured_at": "2026-10-18T05:47:35.534304+00:00",
+   "source": "Cloud Logging, chhaya",
+   "since": "2026-10-18T05:25:19Z",
+   "until": "2026-10-18T05:47:35.534304+00:00",
+   "turns": 34,
+   "reply_s": {
+    "p50": 2.02,
+    "p90": 2.48,
+    "max": 9.04
+   },
+   "reply_with_tool_s": {
+    "p50": 2.13,
+    "p90": 2.42,
+    "max": 2.48
+   },
+   "reply_without_tool_s": {
+    "p50": 1.4,
+    "p90": 4.74,
+    "max": 9.04
+   },
+   "calls": 3,
+   "pickup_s": {
+    "p50": 2.95,
+    "max": 2.98
+   },
+   "calls_opened_now": 3,
+   "pickup_opened_now_s": {
+    "p50": 2.95,
+    "max": 2.98
+   },
+   "calls_pre_opened": 0,
+   "pickup_pre_opened_s": null,
+   "model": "gemini-3.8-live"
+  },
+  "voice_pickup_earlier": {
+   "date": "2026-10-15",
+   "before_s": "4.3–4.6",
+   "after_s": "0.7–0.9",
+   "commit": "01c93f3",
+   "model": "gemini-3.8-live"
+  }
+ },
+ "history": [
+  {
+   "date": "2026-10-15",
+   "commit": "01c93f3",
+   "what": "Voice agent: answer to first word, session opened before the resident speaks",
+   "before": "4.3–4.6 s",
+   "after": "0.7–0.9 s"
+  },
+  {
+   "date": "2026-10-15",
+   "commit": "1004482",
+   "what": "Voice agent: session open time, with a shared client and warm-up",
+   "before": "3.5 s",
+   "after": "2.2 s"
+  },
+  {
+   "date": "2026-10-14",
+   "commit": "64d4ab1",
+   "what": "Ask Chhaya: topic check moved to Flash-Lite",
+   "before": "1.3–10 s",
+   "after": "about 0.9 s"
+  },
+  {
+   "date": "2026-10-12",
+   "commit": "86e3e7d",
+   "what": "Case notes: low thinking",
+   "before": "7–10 s",
+   "after": "2–5 s"
+  },
+  {
+   "date": "2026-10-15",
+   "commit": "01c93f3",
+   "what": "Voice instruction rewritten as a conversation instead of a questionnaire (Hindi heat and no-profile instructions, in words)",
+   "before": "3,464 / 3,320 words",
+   "after": "2,231 / 2,036 words (36–39% shorter)"
+  },
+  {
+   "date": "2026-10-17",
+   "commit": "6aaa17e",
+   "what": "Officer's Overview loads faster",
+   "before": "18.8 s",
+   "after": "5–7 s"
+  },
+  {
+   "date": "2026-10-17",
+   "commit": "6aaa17e",
+   "what": "Officer's Overview start-up script size",
+   "before": "650 kB",
+   "after": "331 kB"
+  },
+  {
+   "date": "2026-10-17",
+   "commit": "6aaa17e",
+   "what": "Region data request on Cloud Run",
+   "before": "about 1.0 s",
+   "after": "0.56 s"
+  },
+  {
+   "fill": "emergency_line",
+   "date": "2026-10-18",
+   "commit": null,
+   "what": "Emergency line (call 108) spoken before the call ends",
+   "before": "5 of 9",
+   "after": "9 of 9",
+   "model": null
+  },
+  {
+   "date": "2026-10-18",
+   "commit": "09d2b57",
+   "what": "Ask Chhaya: answers name the chart or table they show, alert questions read the alerts list, and an ambiguous test question names its resident",
+   "before": "11 of 15",
+   "after": "15 of 15"
+  }
+ ],
+ "limitations": [
+  "Some of the data is synthetic: residents, calls and the officer's dataset are simulated, so the samples are small (50 simulated check-in calls, 15 assistant questions).",
+  "Rate limits on Vertex AI, and running on the team's own cloud credits, stopped us testing at scale or repeating runs; each evaluation was run once.",
+  "The simulation is text, so speech recognition, accents and phone audio are not tested by it.",
+  "Spoken advice is not yet checked automatically for forbidden content in Hindi or Marwari.",
+  "In a real deployment we would track: pass@k and consistency across repeated runs; Red-case recall and false-alarm rate against health workers' visit findings; call answer and completion rates; speech-recognition error rate in Hindi and Marwari; reply latency at the 95th percentile under load; throughput (concurrent calls per instance); time from a Red case to a health worker's visit; and cost per completed call."
+ ]
+}

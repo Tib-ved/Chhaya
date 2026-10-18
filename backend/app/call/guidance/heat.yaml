@@ -1,0 +1,114 @@
+hazard: heat
+context: There is a heatwave warning for the district today.
+# What to cover next, once the person has said how they feel.
+after_feeling: >
+  If they feel dizzy, weak, tired or unwell, go to drinking water and a cool place next.
+# How a resident whose records say they work outdoors is asked about going out.
+outdoor_worker: "Their records say they work outdoors: ask what hours they will be out in the sun today."
+# `ask` is the meaning of each question, in English. `hi` is how it is said in Hindi: what the
+# agent is given to say on every call that is not in English.
+questions:
+  - id: feeling
+    scenarios:
+      - >-
+        If they say they feel hot, thirsty or tired from the heat and nothing more, record "mild_symptoms".
+    ask: How are you feeling right now?
+    hi: "अभी आपकी तबीयत कैसी है?"
+    then:
+      - when: always
+        ask: Any dizziness or headache?
+        hi: "क्या चक्कर या सिरदर्द हो रहा है?"
+      - when: always
+        ask: Any vomiting, cramps or weakness?
+        hi: "क्या उल्टी, ऐंठन या कमज़ोरी है?"
+      - when: they mention any symptom
+        ask: Have you fainted or felt confused?
+        hi: "क्या आपको बेहोशी आई है या कुछ समझ नहीं आ रहा?"
+      - when: they mention any symptom
+        ask: Any chest pain or trouble breathing?
+        hi: "क्या सीने में दर्द है या साँस लेने में तकलीफ़ है?"
+      - when: they have mentioned vomiting
+        ask: Have you been vomiting again and again?
+        hi: "क्या आपको बार-बार उल्टी हो रही है?"
+    values:
+      ok: No symptoms.
+      mild_symptoms: Dizziness, headache, nausea, muscle cramps, weakness, heavy sweating or unusual tiredness.
+      severe_symptoms: Any emergency sign, said at any point.
+      unclear: You cannot tell, or the speaker does not know.
+  - id: fluids_food
+    scenarios:
+      - >-
+        If they ask for water or a tanker, record "low" or "none" by what they have at home now.
+      - >-
+        If they drink buttermilk, lassi, lemon water or ORS, that counts; only tea or a few sips is "low". If they are fasting, record it as it is and do not tell them to break the fast.
+    ask: Have you been drinking water today?
+    hi: "क्या आज आपने पानी पिया है?"
+    then:
+      - when: they have not said whether there is water at home
+        ask: Is there enough drinking water at home?
+        hi: "क्या घर में पीने का पानी काफ़ी है?"
+    values:
+      enough: Drinking water and has enough at home.
+      low: Drinking little, or water at home is running short.
+      none: Has not had water today, or has no water at home.
+  - id: company
+    ask: Is anyone with you at home today?
+    hi: "क्या आज घर पर आपके साथ कोई है?"
+    values:
+      with_someone: Someone is with them or will be during the day.
+      alone: They are alone today.
+  - id: shelter
+    scenarios:
+      - >-
+        If the electricity comes and goes, or the fan runs but the room stays hot (a tin roof, a top floor), record "partial".
+    ask: Do you have a fan or a cool place to stay?
+    hi: "क्या आपके पास पंखा या रहने की कोई ठंडी जगह है?"
+    then:
+      - when: they have not said whether the electricity is on
+        ask: Is the electricity on?
+        hi: "क्या बिजली आ रही है?"
+    values:
+      adequate: Has a fan or cooler that works, or a cool shaded room.
+      partial: Has one but the power keeps going, or the room stays hot.
+      none: No fan, no power, or no shaded place to stay.
+  - id: exposure
+    scenarios:
+      - >-
+        If they must go out in the daytime (wages, farm work, cattle, water, the market), or are outside now, record "must_go_out". Do not tell them to stay away from work.
+      - >-
+        If they go out only in the early morning or after sunset, record "staying_in".
+    ask: Do you need to go out or work outside today?
+    hi: "क्या आज आपको बाहर जाना है या बाहर काम करना है?"
+    values:
+      staying_in: Will stay indoors or in the shade.
+      must_go_out: Has to go out or work outside in the daytime.
+  - id: medicine
+    only_if: has_conditions
+    ask: Do you have your regular medicines with you?
+    hi: "क्या आपकी रोज़ की दवाइयाँ आपके पास हैं?"
+    values:
+      has: Has enough.
+      running_low: Only a day or two left.
+      out: Has none left.
+  - id: help
+    ask: Is there anything you need help with today?
+    hi: "क्या आज आपको किसी मदद की ज़रूरत है?"
+    values:
+      none: Needs nothing.
+      wants_visit: Wants someone to come, or something brought.
+      urgent: Needs someone right now, or an ambulance or a doctor; follow the emergency rule.
+emergency_signs:
+  - Confusion, or not making sense
+  - Fainting or collapse
+  - Hot, dry skin with no sweating
+  - Repeated vomiting
+  - A seizure
+  - Chest pain
+  - Struggling to breathe
+  - A family member says the person cannot be woken or is not responding
+advice:
+  - Drink water often, even if you do not feel thirsty.
+  - Stay indoors or in the shade between noon and four in the afternoon.
+  - Wear loose, light cotton clothes and cover your head if you must go out.
+  - Keep a wet cloth on your head and neck to cool down.
+  - Do not leave children or elderly people alone in a closed room or vehicle.

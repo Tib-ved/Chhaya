@@ -1,0 +1,7 @@
+[
+ "Some of the data is synthetic: residents, calls and the officer's dataset are simulated, so the samples are small (50 simulated check-in calls, 15 assistant questions).",
+ "Rate limits on Vertex AI, and running on the team's own cloud credits, stopped us testing at scale or repeating runs; each evaluation was run once.",
+ "The simulation is text, so speech recognition, accents and phone audio are not tested by it.",
+ "Spoken advice is not yet checked automatically for forbidden content in Hindi or Marwari.",
+ "In a real deployment we would track: pass@k and consistency across repeated runs; Red-case recall and false-alarm rate against health workers' visit findings; call answer and completion rates; speech-recognition error rate in Hindi and Marwari; reply latency at the 95th percentile under load; throughput (concurrent calls per instance); time from a Red case to a health worker's visit; and cost per completed call."
+]

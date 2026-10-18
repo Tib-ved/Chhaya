@@ -1,0 +1,2 @@
+-r ../requirements.txt
+google-adk[eval]==2.12.0

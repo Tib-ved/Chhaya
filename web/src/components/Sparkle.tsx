@@ -1,0 +1,2 @@
+// The mark shown only beside "Ask Chhaya" (AGENTS.md). Its own file, so it is drawn without loading the assistant.
+export const Sparkle = ({ size = 18 }: { size?: number }) => <svg className="ai-sparkle" width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11 2.5l2.1 5.9 5.9 2.1-5.9 2.1L11 18.5l-2.1-5.9L3 10.5l5.9-2.1z" /><path d="M18.5 14l1 2.6 2.5 1-2.5.9-1 2.6-.9-2.6-2.6-.9 2.6-1z" /></svg>
